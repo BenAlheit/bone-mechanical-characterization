@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\usepackage[backend=bibtex]{biblatex}
+
+\usepackage{amsmath} % gathered
+\usepackage{amssymb} % mathbb
+
+\usepackage[margin=0.8in,]{geometry} % Make margins 0.8in inch
+\linespread{1.25} % Use 1.5 linespacing (\linespread{x} standard is 1.2, 1.2*x = 1.5 => x = 1.25)
+\usepackage{graphicx} % Include images
+
+\renewcommand{\d}{\text{d}}
+\newcommand{\der}[2]{\dfrac{\text{d} #1}{\text{d} #2}}
+
+\newcommand{\pder}[2]{\dfrac{\partial #1}{\partial #2}}
+
+\begin{document}
+
+
+
+Consider the network diagram illustrating the viscoelastic behaviour of a 1D constitutive model in Figure \ref{fig:network-diagram}.
+\begin{figure}[!htb]
+	\centering
+%	\includegraphics[width=\columnwidth]{imagefile}
+	\caption{ }
+	\label{fig:network-diagram}
+\end{figure}
+The viscoelastic network 
+
+The network diagram implies several axioms for the way in which the components interact:
+\begin{enumerate}
+	\item The stress of sequential components is equal;
+	\item The stress of parallel components is added;
+	\item The strain of sequential components is added;
+	\item The strain of parallel components is equal.
+\end{enumerate} 
+
+Mathematically, these axioms assert that the following equations define the overall constitutive model and that each equation must be satisfied for the constitutive model to be self-consistent:
+\begin{align}
+	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
+	\sigma & = \sigma^{b} + \sum_{i}^{n}\sigma^{e}_{i}\,,\\
+	\varepsilon^{e}_{i} &= \varepsilon^{d}_{i} + \varepsilon^{s}_{i}\,,\label{eq:el-kin-1}\\
+	\varepsilon& = \varepsilon^{e}_{i}\,.\label{eq:el-kin-2}
+\end{align}
+
+Note that, for the kinematic state of the network to be completely defined, that is, for the strain of each component to be defined $\varepsilon$, $\varepsilon^{d}_{i}$, $\varepsilon^{s}_{i}$, $\varepsilon^{e}_{i}$, $i=1,...,n$, one needs to define $\varepsilon$ and $\varepsilon^{d}_{i}$. Then, the other strain values are defined by equations \eqref{eq:el-kin-1} and \eqref{eq:el-kin-2}. Hence, we identify $\varepsilon^{d}_{i}$ as a state variable. 
+
+
+
+\begin{equation}
+	\dot{\Psi} = \dot{\Psi}^{b} + \sum_{i}^{n}  \dot{\Psi}^{e}_{i}
+\end{equation}
+%
+%\begin{equation}
+%	\dot{\Psi}^{e}_{i} = \dot{\Psi}^{s}_{i} - \dot{\Phi}^{d}_{i}
+%\end{equation}
+%
+%
+%\begin{equation}
+%	\dot{\Psi} = \der{\Psi}{\varepsilon}\dot{\varepsilon} = \der{\Psi^{b}}{\varepsilon}\dot{\varepsilon} + \sum_{i}^{n}  \der{\Psi^{e}}{\varepsilon}\dot{\varepsilon}
+%\end{equation}
+%
+%\begin{equation}
+%	\dot{\Psi}^{e}_{i} = \der{\Psi^{s}_{i}}{\varepsilon^{s}_{i}}\der{\varepsilon^{s}_{i}}{\varepsilon}\dot{\varepsilon} - \dot{\Phi}^{d}_{i}
+%\end{equation}
+%
+%\begin{equation}
+%	\sigma^{v}\dot{\varepsilon} = \sigma^{s}\dot{\varepsilon}^{s} + \sigma^{d}\dot{\varepsilon}^{d}
+%\end{equation}
+
+
+\begin{equation}
+	\dot{\Psi}^{e}_{i} = \dot{\Psi}^{s}_{i}(\varepsilon^{s}) - \dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d})
+\end{equation}
+
+\begin{equation}
+	\dot{w} = \sigma^{e}\dot{\varepsilon}^{e} = \sigma^{d}\dot{\varepsilon}^{d} + \sigma^{s}\dot{\varepsilon}^{s}
+\end{equation}
+
+%
+%\begin{equation}
+%	\Phi^{d}_{i} = \int_{0}^{t}\dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d})\, \d s
+%\end{equation}
+%
+%\begin{equation}
+%	\dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d}) = \dfrac{1}{2}\eta \left[\dot{\varepsilon}^{d}\right]^{2}
+%\end{equation}
+
+
+\begin{equation}
+	D = \sigma^{e}\dot{\varepsilon}^{e} - \dot{\Psi}^{e} \geq 0
+\end{equation}
+
+
+\begin{equation}
+	D = \sigma^{d}\dot{\varepsilon}^{d} + \sigma^{s}\dot{\varepsilon}^{s} - \dot{\Psi}^{e} \geq 0
+\end{equation}
+
+\end{document}

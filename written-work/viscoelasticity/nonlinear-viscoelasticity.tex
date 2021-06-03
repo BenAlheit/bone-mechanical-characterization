@@ -4,6 +4,7 @@
 
 \usepackage{amsmath} % gathered
 \usepackage{amssymb} % mathbb
+\usepackage{bm} % mathbb
 
 \usepackage[margin=0.8in,]{geometry} % Make margins 0.8in inch
 \linespread{1.25} % Use 1.5 linespacing (\linespread{x} standard is 1.2, 1.2*x = 1.5 => x = 1.25)
@@ -16,8 +17,9 @@
 
 \begin{document}
 
+\section{A framework for nonlinear generalized 1D rheological Maxwell networks}
 
-
+\subsection{Kinematics and kinetics}
 Consider the network diagram illustrating the viscoelastic behaviour of a 1D constitutive model in Figure \ref{fig:network-diagram}.
 \begin{figure}[!htb]
 	\centering
@@ -45,55 +47,127 @@ Mathematically, these axioms assert that the following equations define the over
 
 Note that, for the kinematic state of the network to be completely defined, that is, for the strain of each component to be defined $\varepsilon$, $\varepsilon^{d}_{i}$, $\varepsilon^{s}_{i}$, $\varepsilon^{e}_{i}$, $i=1,...,n$, one needs to define $\varepsilon$ and $\varepsilon^{d}_{i}$. Then, the other strain values are defined by equations \eqref{eq:el-kin-1} and \eqref{eq:el-kin-2}. Hence, we identify $\varepsilon^{d}_{i}$ as a state variable. 
 
+\begin{equation}
+		\varepsilon = \varepsilon^{d} + \varepsilon^{s}\,.
+\end{equation}
 
+\begin{equation}
+	\dot{\varepsilon } = \dot{\varepsilon}^{d} + \dot{\varepsilon}^{s}\,.
+\end{equation}
+
+\subsection{Thermodynamic considerations}
+
+
+Rate of work done on each Maxwell branch
+\begin{equation}
+	\dot{w}^{e}_{i} = \sigma^{e}_{i}\dot{\varepsilon} = \underbrace{\sigma^{s}_{i}\left[\dot{\varepsilon}-\dot{\varepsilon}_{i}^{d}\right]}_{\dot{\Psi}^{e}_{i}} + \underbrace{\sigma^{d}_{i}\dot{\varepsilon}_{i}^{d}}_{\dot{\Phi}^{e}_{i}}
+\end{equation}
+
+Axioms for the sub-constitutive models
+\begin{enumerate}
+	\item $\sigma^{s}_{i}(\varepsilon^{s}_{i})$, $\sigma^{e}_{i}(0) = 0$
+	\item $\sigma^{d}_{i}\left(\dot{\varepsilon}^{d}_{i}\right)$,  $\sigma^{d}_{i}\left(0\right) = 0$ 
+\end{enumerate}
+
+\begin{equation}
+	\der{\Psi^{e}_{i}}{\varepsilon^{s}}\dot{\varepsilon}^{s} = \sigma^{s}_{i}\left[\dot{\varepsilon}-\dot{\varepsilon}_{i}^{d}\right] \Rightarrow \left[\der{\Psi^{e}_{i}}{\varepsilon^{s}} - \sigma^{s}_{i}\right]\dot{\varepsilon}^{s} = 0 \Rightarrow \sigma^{s}_{i} = \der{\Psi^{e}_{i}}{\varepsilon^{s}}
+\end{equation}
+
+\begin{equation}
+	D = \sigma^{e}_{i}\dot{\varepsilon} - \dot{\Psi}^{e}_{i} \geq 0 
+\end{equation}
+
+\begin{equation}
+	D = \sigma^{d}_{i}\dot{\varepsilon}_{i}^{d} = \dot{\Phi}^{e}_{i} \geq 0 
+\end{equation}
 
 \begin{equation}
 	\dot{\Psi} = \dot{\Psi}^{b} + \sum_{i}^{n}  \dot{\Psi}^{e}_{i}
 \end{equation}
-%
-%\begin{equation}
-%	\dot{\Psi}^{e}_{i} = \dot{\Psi}^{s}_{i} - \dot{\Phi}^{d}_{i}
-%\end{equation}
-%
-%
-%\begin{equation}
-%	\dot{\Psi} = \der{\Psi}{\varepsilon}\dot{\varepsilon} = \der{\Psi^{b}}{\varepsilon}\dot{\varepsilon} + \sum_{i}^{n}  \der{\Psi^{e}}{\varepsilon}\dot{\varepsilon}
-%\end{equation}
-%
-%\begin{equation}
-%	\dot{\Psi}^{e}_{i} = \der{\Psi^{s}_{i}}{\varepsilon^{s}_{i}}\der{\varepsilon^{s}_{i}}{\varepsilon}\dot{\varepsilon} - \dot{\Phi}^{d}_{i}
-%\end{equation}
-%
-%\begin{equation}
-%	\sigma^{v}\dot{\varepsilon} = \sigma^{s}\dot{\varepsilon}^{s} + \sigma^{d}\dot{\varepsilon}^{d}
-%\end{equation}
 
+\subsection{Framework allowing for arbitrary choice of sub-constitutive models}
 
+Partition of the time domain
 \begin{equation}
-	\dot{\Psi}^{e}_{i} = \dot{\Psi}^{s}_{i}(\varepsilon^{s}) - \dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d})
+	0 = t_{0} < t_{1} < ... < t_{n} < t_{n+1} = t
+\end{equation}
+Define
+\begin{equation}
+	\Delta t_{n+1} = t_{n+1} - t_{n}\,, \qquad t_{n+0.5} = \dfrac{1}{2}\left[t_{n+1} + t_{n}\right]\,.
 \end{equation}
 
 \begin{equation}
-	\dot{w} = \sigma^{e}\dot{\varepsilon}^{e} = \sigma^{d}\dot{\varepsilon}^{d} + \sigma^{s}\dot{\varepsilon}^{s}
+	\dot{\varepsilon}_{n+1}^{d} = \dfrac{1}{\Delta t_{n+1}}\left[\varepsilon_{n+1}^{d} - \varepsilon_{n}^{d}\right]
 \end{equation}
 
-%
-%\begin{equation}
-%	\Phi^{d}_{i} = \int_{0}^{t}\dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d})\, \d s
-%\end{equation}
-%
-%\begin{equation}
-%	\dot{\Phi}^{d}_{i}(\dot{\varepsilon}^{d}) = \dfrac{1}{2}\eta \left[\dot{\varepsilon}^{d}\right]^{2}
-%\end{equation}
+\begin{equation}
+	\dot{\varepsilon}_{n+1} = \dfrac{1}{\Delta t_{n+1}}\left[\varepsilon_{n+1} - \varepsilon_{n}\right]
+\end{equation}
+
+\begin{equation}
+	\sigma^{s}(\varepsilon_{n+1} - \varepsilon_{n+1}^{d}) = \sigma^{d}\left(\dot{\varepsilon}_{n+1}^{d}\right)
+\end{equation}
+
+\begin{equation}
+		r = \sigma^{d}\left(\dot{\varepsilon}_{n+1}^{d}\right) - \sigma^{s}(\varepsilon_{n+1} - \varepsilon_{n+1}^{d})  
+\end{equation}
+
+\begin{equation}
+	L[r] = r_{i} + \der{r}{\varepsilon_{n+1(i)}^{d}} \Delta \varepsilon_{n+1(i)}^{d}
+\end{equation}
+
+\begin{equation}
+	\varepsilon_{n+1(i+1)}^{d} = 	\varepsilon_{n+1(i)}^{d} - \left[\der{r}{\varepsilon_{n+1}^{d}}\right]_{i}^{-1}r_{i}
+\end{equation}
+
+\begin{equation}
+	\der{r}{\varepsilon_{n+1}^{d}} = \der{\sigma^{d}}{\dot{\varepsilon}^{d}}\der{ }{\varepsilon_{n+1}^{d} }\left[ \dfrac{1}{\Delta t_{n+1}}\left[\varepsilon_{n+1}^{d} - \varepsilon_{n}^{d}\right]\right] - \der{\sigma^{s}}{\varepsilon^{s}}\der{ }{\varepsilon_{n+1}^{d}}\left[\varepsilon_{n+1} - \varepsilon_{n+1}^{d}\right]
+\end{equation}
 
 
 \begin{equation}
-	D = \sigma^{e}\dot{\varepsilon}^{e} - \dot{\Psi}^{e} \geq 0
+	\der{r}{\varepsilon_{n+1}^{d}} = \dfrac{1}{\Delta t_{n+1}}\der{\sigma^{d}}{\dot{\varepsilon}^{d}} + \der{\sigma^{s}}{\varepsilon^{s}}
 \end{equation}
 
+\subsection{Some constitutive models}
+
+\subsubsection{Linear models}
 
 \begin{equation}
-	D = \sigma^{d}\dot{\varepsilon}^{d} + \sigma^{s}\dot{\varepsilon}^{s} - \dot{\Psi}^{e} \geq 0
+	\sigma^{\infty} = E^{\infty}\varepsilon
 \end{equation}
+
+\begin{equation}
+	\sigma^{s} = E^{s}\left[\varepsilon-\varepsilon^{d}\right]\,, \qquad \sigma^{d} = \eta \dot{\varepsilon}^{d}\,.
+\end{equation}
+
+$\sigma^{s} = \sigma^{d} \Rightarrow$
+
+\begin{equation}
+	E^{s}\left[\varepsilon-\varepsilon^{d}\right] = \eta \dot{\varepsilon}^{d}
+\end{equation}
+
+\begin{equation}
+	\tau = \dfrac{\eta}{E^{s}}
+\end{equation}
+
+\begin{equation}
+	\dfrac{1}{\tau}\varepsilon =  \dfrac{1}{\tau}\varepsilon^{d} + \dot{\varepsilon}^{d}
+\end{equation}
+
+Integrating factor:
+\begin{equation}
+	\exp\left(\int\dfrac{1}{\tau}\,\d t\right) = 	\exp\left(\dfrac{t}{\tau}\right) 
+\end{equation}
+
+\begin{equation}
+	\dfrac{1}{\tau}\exp\left(\dfrac{t}{\tau}\right) \varepsilon =  \der{ }{t}\left[\exp\left(\dfrac{t}{\tau}\right) \varepsilon^{d} \right] 
+\end{equation}
+
+\begin{equation}
+	\varepsilon^{d} = \int_{-\infty}^{t}\dfrac{1}{\tau}\exp\left(\dfrac{s-t}{\tau}\right)\varepsilon \,\d s
+\end{equation}
+
+Integrate by parts ...
 
 \end{document}

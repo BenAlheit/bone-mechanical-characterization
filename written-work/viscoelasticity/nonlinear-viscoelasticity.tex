@@ -10,10 +10,16 @@
 \linespread{1.25} % Use 1.5 linespacing (\linespread{x} standard is 1.2, 1.2*x = 1.5 => x = 1.25)
 \usepackage{graphicx} % Include images
 
+
+\usepackage{subcaption} 
+
+\graphicspath{{./figures/}}
+
 \renewcommand{\d}{\text{d}}
 \newcommand{\der}[2]{\dfrac{\text{d} #1}{\text{d} #2}}
 
 \newcommand{\pder}[2]{\dfrac{\partial #1}{\partial #2}}
+
 
 \begin{document}
 
@@ -57,7 +63,7 @@ Mathematically, these axioms assert that the following equations define the over
 	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
 	\sigma & = \sigma^{b} + \sum_{i}^{n}\sigma^{e}_{i}\,,\\
 	\varepsilon^{e}_{i} &= \varepsilon^{d}_{i} + \varepsilon^{s}_{i}\,,\label{eq:el-kin-1}\\
-	\varepsilon& = \varepsilon^{e}_{i}\,.\label{eq:el-kin-2}
+	\varepsilon& = \varepsilon^{e}_{i} \,.\label{eq:el-kin-2}
 \end{align}
 
 Note that, for the kinematic state of the network to be completely defined, that is, for the strain of each component to be defined $\varepsilon$, $\varepsilon^{d}_{i}$, $\varepsilon^{s}_{i}$, $\varepsilon^{e}_{i}$, $i=1,...,n$, one needs to define $\varepsilon$ and $\varepsilon^{d}_{i}$. Then, the other strain values are defined by equations \eqref{eq:el-kin-1} and \eqref{eq:el-kin-2}. Hence, we identify $\varepsilon^{d}_{i}$ as a state variable. 
@@ -260,6 +266,28 @@ Fix incorrect sign:
 \begin{equation}
 	\sigma = E^{\infty}\varepsilon- \tau \left[1-\exp\left(\dfrac{-\varepsilon}{\dot{\varepsilon}_{0} \tau}\right)\right]E^{s}\dot{\varepsilon}_{0} 
 \end{equation}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.48\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{e-stress} 
+	\end{subfigure}
+	\begin{subfigure}{0.48\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{e-dot-stress} 
+	\end{subfigure}
+
+	\begin{subfigure}{0.48\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{e-dot-stress-tau} 
+	\end{subfigure}
+	\begin{subfigure}{0.48\textwidth}
+		\centering 
+		\includegraphics[width=\linewidth]{e-dot-stress-E} 
+	\end{subfigure}
+
+\end{figure}
 
 
 \end{document}

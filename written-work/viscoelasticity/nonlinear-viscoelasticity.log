@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  4 JUN 2021 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.1.28)  11 JUN 2021 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -437,21 +437,28 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 \@quotelevel=\count293
 \@quotereset=\count294
 
-(./nonlinear-viscoelasticity.aux)
+(./nonlinear-viscoelasticity.aux
+
+LaTeX Warning: Label `eq:el-kin-1' multiply defined.
+
+
+LaTeX Warning: Label `eq:el-kin-2' multiply defined.
+
+)
 \openout1 = `nonlinear-viscoelasticity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -465,8 +472,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'nonlinear-viscoelasticity.bbl' not found.
 
 No file nonlinear-viscoelasticity.bbl.
-Package biblatex Info: Reference section=0 on input line 24.
-Package biblatex Info: Reference segment=0 on input line 24.
+Package biblatex Info: Reference section=0 on input line 22.
+Package biblatex Info: Reference segment=0 on input line 22.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -536,19 +543,19 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -558,24 +565,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./figures/e-stress.pdf, id=24, 462.52798pt x 346.89601pt>
 File: ./figures/e-stress.pdf Graphic file (type pdf)
 <use ./figures/e-stress.pdf>
-Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 274.
+Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 272.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress.pdf, id=25, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 278.
+Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 276.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress-tau.pdf, id=26, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-tau.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-tau.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 283
+Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 281
 .
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress-E.pdf, id=27, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-E.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-E.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 287.
+Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 285.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
+<./figures/odw.pdf, id=28, 462.52798pt x 346.89601pt>
+File: ./figures/odw.pdf Graphic file (type pdf)
+<use ./figures/odw.pdf>
+Package pdftex.def Info: ./figures/odw.pdf  used on input line 308.
+(pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
  [5] [6 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress.pdf): PDF inclus
@@ -588,16 +600,19 @@ clusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress-E.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
->] (./nonlinear-viscoelasticity.aux)
+>] [7 <./figures/odw.pdf>] [8] (./nonlinear-viscoelasticity.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
 \openout1 = `nonlinear-viscoelasticity.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10491 strings out of 492982
- 177964 string characters out of 6134896
+ 10497 strings out of 492982
+ 178091 string characters out of 6134896
  441766 words of memory out of 5000000
- 13931 multiletter control sequences out of 15000+600000
+ 13936 multiletter control sequences out of 15000+600000
  12265 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,814b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -608,16 +623,18 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on nonlinear-viscoelasticity.pdf (6 pages, 338176 bytes).
+public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nonlinear-viscoelasticity.pdf (8 pages, 359543 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -42,6 +42,26 @@ class LinearVEMaterial(VEConstitutiveModel):
         return self._Es
 
 
+class LinearEOdWVMaterial(VEConstitutiveModel):
+
+    def __init__(self, Es, K, n):
+        self._K = K
+        self._n = n
+        self._Es = Es
+
+    def sig_d(self, eps_d_dot):
+        return self._K * np.sign(eps_d_dot) * np.abs(eps_d_dot) ** self._n
+
+    def dsig_d_deps_d_dot(self, eps_d_dot):
+        return self._eta
+
+    def sig_e(self, eps_e):
+        return self._Es * eps_e
+
+    def dsig_e_deps_e(self, eps_e):
+        return self._Es
+
+
 class TemporalApproximation(ABC):
 
     def __init__(self, n):

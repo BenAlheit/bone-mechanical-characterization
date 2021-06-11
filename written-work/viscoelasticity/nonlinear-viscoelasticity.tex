@@ -287,7 +287,7 @@ Fix incorrect sign:
 
 \end{figure}
 
-\subsection{Shear thickening and thinning models}
+\subsubsection{Ostwald-de Waele model}
 
 Bone is assumed to be impregnated with blood and other biological fluids which are susceptible to shear thinning or thickening
 
@@ -296,7 +296,68 @@ Bone is assumed to be impregnated with blood and other biological fluids which a
 \end{equation}
 
 \begin{equation}
-	\eta(\dot{\epsilon}^{d}) = K |\dot{\epsilon}^{d}|^{n-1}
+	D = \eta(\dot{\epsilon}^{d})\left[\dot{\epsilon}^{d}\right]^{2} \geq 0 \,, \qquad \eta(\dot{\epsilon}^{d})\geq 0\,.
 \end{equation}
+
+\begin{equation}
+	\eta(\dot{\epsilon}^{d}) = \eta_{0} |\dot{\epsilon}^{d}|^{n-1}
+\end{equation}
+Can change slant. See for example Figure \ref{fig:odw}.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.65\linewidth]{odw}
+	\caption{ }
+	\label{fig:odw}	
+\end{figure}
+
+\section{Going 3D}
+
+\subsection{Options options}
+
+\begin{align}
+	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
+	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
+	\sigma & = \sigma^{b} + \sum_{i}^{n}\sigma^{e}_{i}\,,\\
+	\varepsilon^{e}_{i} &= \varepsilon^{d}_{i} + \varepsilon^{s}_{i}\,,\label{eq:el-kin-1}\\
+	\varepsilon& = \varepsilon^{e}_{i}\,.\label{eq:el-kin-2}
+\end{align}
+
+\begin{equation}
+	\bar{\bm{\varepsilon}} = \bar{\bm{\varepsilon}}^{d} +   \bar{\bm{\varepsilon}}^{s} 
+\end{equation}
+
+
+\subsection{Some models}
+
+\subsubsection{Linear models}
+
+
+\subsubsection{Ostwald-de Waele model}
+
+\begin{equation}
+	\bar{\bm{\sigma}}^{d} = \bar{\mathbb{C}}^{d}\dot{\bar{\bm{\varepsilon}}}^{d}
+\end{equation}
+
+\begin{equation}
+	 \bar{\mathbb{C}}^{d}_{ijkl} = \eta_{0} \left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right|\right|^{n-1} \delta_{ik}\delta_{jl}
+\end{equation}
+
+\begin{equation}
+	\pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}} = \bar{\mathbb{C}}^{d} + \left[\pder{ }{\dot{\bar{\bm{\varepsilon}}}^{d}} \bar{\mathbb{C}}^{d}\right]\dot{\bar{\bm{\varepsilon}}}^{d}
+\end{equation}
+
+\begin{equation}
+	\pder{ }{\dot{\varepsilon}_{kl}}\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-1\right]/2} = \left[n-1\right]\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-3\right]/2}\dot{\varepsilon}_{kl}
+\end{equation}
+
+\begin{equation}
+	\bm{r} = \bar{\bm{\sigma}}^{d}\left(\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}\right) - \bar{\bm{\sigma}}^{s}(\bar{\bm{\varepsilon}}_{n+1} - \bar{\bm{\varepsilon}}_{n+1}^{d})  
+\end{equation}
+
+\begin{equation}
+	\pder{\bm{r}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} = \pder{\bar{\bm{\sigma}}^{d}\left(\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}\right)}{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}\pder{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} + \pder{\bar{\bm{\sigma}}^{s}}{\bar{\bm{\varepsilon}}_{n+1}^{s}}
+\end{equation}
+
+
 
 \end{document}

@@ -100,6 +100,12 @@ Axioms for the sub-constitutive models
 	\dot{\Psi} = \dot{\Psi}^{b} + \sum_{i}^{n}  \dot{\Psi}^{e}_{i}
 \end{equation}
 
+\subsection{Typical approach for implementing evolution}
+
+\begin{equation}
+	\
+\end{equation}
+
 \subsection{Framework allowing for arbitrary choice of sub-constitutive models}
 
 Partition of the time domain
@@ -261,5 +267,16 @@ Fix incorrect sign:
 	\sigma = E^{\infty}\varepsilon- \tau \left[1-\exp\left(\dfrac{-\varepsilon}{\dot{\varepsilon}_{0} \tau}\right)\right]E^{s}\dot{\varepsilon}_{0} 
 \end{equation}
 
+\subsection{Shear thickening and thinning models}
+
+Bone is assumed to be impregnated with blood and other biological fluids which are susceptible to shear thinning or thickening
+
+\begin{equation}
+	\sigma^{d} = \eta(\dot{\epsilon}^{d})\dot{\epsilon}^{d} 
+\end{equation}
+
+\begin{equation}
+	\eta(\dot{\epsilon}^{d}) = K |\dot{\epsilon}^{d}|^{n-1}
+\end{equation}
 
 \end{document}

@@ -103,7 +103,6 @@ class TemporalApproximation(ABC):
         return self._ans[0]
 
 
-
 class BackwardEuler(TemporalApproximation):
 
     def __init__(self):

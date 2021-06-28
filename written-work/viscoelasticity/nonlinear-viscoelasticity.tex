@@ -6,6 +6,11 @@
 \usepackage{amssymb} % mathbb
 \usepackage{bm} % mathbb
 
+
+\usepackage{algorithm}% http://ctan.org/pkg/algorithm
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+
+
 \usepackage[margin=0.8in,]{geometry} % Make margins 0.8in inch
 \linespread{1.25} % Use 1.5 linespacing (\linespread{x} standard is 1.2, 1.2*x = 1.5 => x = 1.25)
 \usepackage{graphicx} % Include images
@@ -15,6 +20,7 @@
 \graphicspath{{./figures/}}
 
 \renewcommand{\d}{\text{d}}
+\newcommand{\tr}{\text{tr}}
 \newcommand{\der}[2]{\dfrac{\text{d} #1}{\text{d} #2}}
 
 \newcommand{\pder}[2]{\dfrac{\partial #1}{\partial #2}}
@@ -315,26 +321,119 @@ Can change slant. See for example Figure \ref{fig:odw}.
 	\label{fig:odw}	
 \end{figure}
 
-\section{Going 3D}
-
-\subsection{Options options}
-
-\begin{align}
-	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
-	\sigma^{s}_{i} &= \sigma^{d}_{i} = \sigma^{e}_{i}\,,\\
-	\sigma & = \sigma^{b} + \sum_{i}^{n}\sigma^{e}_{i}\,,\\
-	\varepsilon^{e}_{i} &= \varepsilon^{d}_{i} + \varepsilon^{s}_{i}\,,\label{eq:el-kin-1}\\
-	\varepsilon& = \varepsilon^{e}_{i}\,.\label{eq:el-kin-2}
-\end{align}
+\subsubsection{Carreau--Yasuda model}
 
 \begin{equation}
-	\bar{\bm{\varepsilon}} = \bar{\bm{\varepsilon}}^{d} +   \bar{\bm{\varepsilon}}^{s} 
+	\eta = \eta^{\infty} + \left[\eta^{0}-\eta^{\infty}\right]\left[1 + \left[\lambda \left|\dot{\epsilon}^{d}\right|\right]^{a}\right]^{\left[n-1\right]/a}
 \end{equation}
+
+\section{Going 3D}
+
+\subsection{Isochoric-volumetric split of the strain}
+Logic: viscous effects are caused by fluids which are approximated as incompressible (only experience isochoric strains).
+
+
+\begin{equation}
+\bm{\sigma}^{\infty} = \lambda \bm{I}\tr\left(\bm{\varepsilon}\right) + 2\mu \bm{\varepsilon}
+\end{equation}
+
+\begin{equation}
+\sigma_{ij}^{\infty} = \lambda \delta_{ij}\varepsilon_{mm} + 2\mu \varepsilon_{ij}
+\end{equation}
+
+
+\begin{equation}
+\bm{\varepsilon} = \bar{\bm{\varepsilon}} + \hat{\bm{\varepsilon}} \,, \qquad \hat{\bm{\varepsilon}} = \dfrac{1}{3}\bm{I} \tr\left(\bm{\varepsilon}\right)
+\end{equation}
+
+\begin{equation}
+\bm{\sigma}^{\infty} = \lambda \bm{I}\tr\left(\bar{\bm{\varepsilon}} + \hat{\bm{\varepsilon}}\right) + 2\mu \left[\bar{\bm{\varepsilon}} + \hat{\bm{\varepsilon}}\right]
+\end{equation}
+
+\begin{equation}
+\sigma_{ij}^{\infty} = \lambda \delta_{ij} \hat{\varepsilon}_{mm} + 2\mu \hat{\varepsilon}_{ij} + 2\mu \bar{\varepsilon}_{ij}
+\end{equation}
+
+
+\begin{equation}
+\begin{aligned}
+\sigma_{ij}^{\infty} = \underbrace{\left[\lambda \delta_{ij} \delta_{kl}  + 2\mu \delta_{ik} \delta_{jl}\right]}_{\hat{\mathbb{C}}_{ijkl}} \hat{\varepsilon}_{kl} + \underbrace{2\mu \delta_{ik} \delta_{jl}}_{\bar{\mathbb{C}}_{ijkl}} \bar{\varepsilon}_{kl}\\
+\hat{\sigma}_{ij}^{\infty} = \hat{\mathbb{C}}_{ijkl}\hat{\varepsilon}_{kl}\,,\qquad \bar{\sigma}_{ij}^{\infty}= \bar{\mathbb{C}}_{ijkl} \bar{\varepsilon}_{kl}
+\end{aligned}
+\end{equation}
+
+
+\subsection{Maxwell network in 3D}
+Motivated by 1D Maxwell network:
+\begin{align}
+	\bar{\bm{\sigma}}^{s}_{i} &= \bar{\bm{\sigma}}^{d}_{i} = \bar{\bm{\sigma}}^{e}_{i}\,,\\
+	\bar{\bm{\varepsilon}}_{i} &= \bar{\bm{\varepsilon}}^{d}_{i} + \bar{\bm{\varepsilon}}^{s}_{i}\,,\\
+	\bar{\bm{\sigma}} & = \bar{\bm{\sigma}}^{b} + \sum_{i}^{n}\bar{\bm{\sigma}}^{e}_{i}\,,\\
+	\hat{\bm{\sigma}}^{s}_{i} &= \hat{\bm{\sigma}}^{d}_{i} = \hat{\bm{\sigma}}^{e}_{i}\,,\\
+	\hat{\bm{\varepsilon}}_{i} &= \hat{\bm{\varepsilon}}^{d}_{i} + \hat{\bm{\varepsilon}}^{s}_{i}\,,\\
+	\hat{\bm{\sigma}} & = \hat{\bm{\sigma}}^{b} + \sum_{i}^{n}\hat{\bm{\sigma}}^{e}_{i}\,,\\
+	\bm{\sigma} &=\hat{\bm{\sigma}} +\bar{\bm{\sigma}}\,.
+\end{align}
+
+\subsection{Framework}
+
+
+\begin{algorithm}[!htb]
+	\caption{Procedure for determining stress and constitutive tensor required by {\sc abaqus} for a compressible material given the derivatives of its strain energy function.}
+	\begin{algorithmic}[1]
+		\Procedure{increment\_viscoelastic\_material}{$\bm{\varepsilon}^{n+1}$, $\bar{\bm{\varepsilon}}^{d(n)}$}
+		\State $\hat{\bm{\varepsilon}} = \dfrac{1}{3}\bm{I}\tr\left(\bm{\varepsilon}^{n+1}\right) $
+		\State $\bar{\bm{\varepsilon}} = \bm{\varepsilon}^{n+1} - \hat{\bm{\varepsilon}}$
+		\State $\bm{\sigma}^{\infty} = 3\lambda\hat{\bm{\varepsilon}} + 2 \mu \bm{\varepsilon}^{n+1}$
+		\State $\bar{\bm{\sigma}}^{\infty}$(:, :, :) = \Call{CALC\_BIG\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
+		\State $J = \det \bm{F}$
+		\State $\bm{\sigma} = \bm{0}$
+		
+		\State \Return $\bm{\sigma}$, $\mathbb{c}_{\text{\sc aba}}$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
 
 
 \subsection{Some models}
 
 \subsubsection{Linear models}
+\begin{equation}
+	\bar{\sigma}_{ij}^{\infty}= \bar{\mathbb{C}}_{ijkl} \bar{\varepsilon}_{kl}
+\end{equation}
+
+\begin{equation}
+	\bar{\sigma}_{ij}^{d} = \bar{\mathbb{C}}^{d}_{ijkl} \dot{\bar{\varepsilon}}^{d}_{kl}
+\end{equation}
+
+\begin{equation}
+\bar{\sigma}_{ij}^{s} = \bar{\mathbb{C}}^{s}_{ijkl} \left[\bar{\varepsilon}_{kl}-\bar{\varepsilon}^{d}_{kl}\right]
+\end{equation}
+
+\begin{equation}
+	\bar{\mathbb{C}}^{d}_{ijkl} \dot{\bar{\varepsilon}}^{d}_{kl} = \bar{\mathbb{C}}^{s}_{ijkl} \left[\bar{\varepsilon}_{kl}-\bar{\varepsilon}^{d}_{kl}\right]
+\end{equation}
+
+\begin{equation}
+\bar{\mathbb{C}}^{d}_{ijkl} \dot{\bar{\varepsilon}}^{d}_{kl} + \bar{\mathbb{C}}^{s}_{ijkl}\bar{\varepsilon}^{d}_{kl} = \bar{\mathbb{C}}^{s}_{ijkl} \bar{\varepsilon}_{kl}
+\end{equation}
+
+\begin{equation}
+	\bar{\mathbb{C}}^{d} = \tau\bar{\mathbb{C}}^{s}
+\end{equation}
+
+\begin{equation}
+\dot{\bar{\bm{\varepsilon}}}^{d} + \dfrac{1}{\tau}\bar{\bm{\varepsilon}}^{d} = \dfrac{1}{\tau} \bar{\bm{\varepsilon}}
+\end{equation}
+
+
+\begin{equation}
+\bar{\bm{\varepsilon}}^{d} = \bar{\bm{\varepsilon}} - \int_{-\infty}^{t} \exp\left(\dfrac{s-t}{\tau}\right)\dot{\bar{\bm{\varepsilon}}} \,\d s
+\end{equation}
+
+\begin{equation}
+\bar{\bm{\sigma}}^{e} = \int_{-\infty}^{t} \exp\left(\dfrac{s-t}{\tau}\right)\bar{\mathbb{C}}^{s}\dot{\bar{\bm{\varepsilon}}} \,\d s
+\end{equation}
 
 
 \subsubsection{Ostwald-de Waele model}
@@ -344,15 +443,24 @@ Can change slant. See for example Figure \ref{fig:odw}.
 \end{equation}
 
 \begin{equation}
-	 \bar{\mathbb{C}}^{d}_{ijkl} = \eta_{0} \left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right|\right|^{n-1} \delta_{ik}\delta_{jl}
+	 \bar{\mathbb{C}}^{d}_{ijop} = \eta_{0} \left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right|\right|^{n-1} \delta_{io}\delta_{jp}
 \end{equation}
 
 \begin{equation}
-	\pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}} = \bar{\mathbb{C}}^{d} + \left[\pder{ }{\dot{\bar{\bm{\varepsilon}}}^{d}} \bar{\mathbb{C}}^{d}\right]\dot{\bar{\bm{\varepsilon}}}^{d}
+	\pder{\bar{\bm{\sigma}}^{d}_{ij}}{\dot{\bar{\bm{\varepsilon}}}_{kl}^{d}} = \bar{\mathbb{C}}^{d}_{ijkl} + \left[\pder{ }{\dot{\bar{\bm{\varepsilon}}}_{kl}^{d}} \bar{\mathbb{C}}^{d}_{ijop}\right]\dot{\bar{\bm{\varepsilon}}}_{op}^{d}
 \end{equation}
 
 \begin{equation}
-	\pder{ }{\dot{\varepsilon}_{kl}}\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-1\right]/2} = \left[n-1\right]\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-3\right]/2}\dot{\varepsilon}_{kl}
+	\pder{ }{\dot{\varepsilon}_{kl}}\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-1\right]/2} = \left[n-1\right]\left(\dot{\varepsilon}_{mn}\dot{\varepsilon}_{mn}\right)^{\left[n-3\right]/2}\dot{\varepsilon}_{kl} = \left[n-1\right]\left|\left|\dot{\bm{\varepsilon}}\right |\right|^{n-3}\dot{\varepsilon}_{kl}
+\end{equation}
+
+\begin{equation}
+		\pder{\bar{\bm{\sigma}}^{d}_{ij}}{\dot{\bar{\bm{\varepsilon}}}_{kl}^{d}} = \bar{\mathbb{C}}^{d}_{ijkl} +\left[n-1\right]\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right |\right|^{n-3}\dot{\bar{\varepsilon}}^{d}_{ij}\dot{\bar{\varepsilon}}^{d}_{kl}
+\end{equation}
+
+
+\begin{equation}
+\pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}} = \bar{\mathbb{C}}^{d} +\left[n-1\right]\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right |\right|^{n-3}\dot{\bar{\bm{\varepsilon}}}^{d}\otimes\dot{\bar{\bm{\varepsilon}}}^{d}
 \end{equation}
 
 \begin{equation}
@@ -363,6 +471,20 @@ Can change slant. See for example Figure \ref{fig:odw}.
 	\pder{\bm{r}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} = \pder{\bar{\bm{\sigma}}^{d}\left(\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}\right)}{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}\pder{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} + \pder{\bar{\bm{\sigma}}^{s}}{\bar{\bm{\varepsilon}}_{n+1}^{s}}
 \end{equation}
 
+\begin{algorithm}[!htb]
+	\caption{Procedure for determining stress and constitutive tensor required by {\sc abaqus} for a compressible material given the derivatives of its strain energy function.}
+	\label{alg:comp-umat}
+	\begin{algorithmic}[1]
+		\Procedure{increment\_viscoelastic\_material}{$\bm{\varepsilon}$}
+		\State $\bm{A}$(:, :, :) = \Call{CALC\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
+		\State $\mathbb{A}$(:, :, :) = \Call{CALC\_BIG\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
+		\State $J = \det \bm{F}$
+		\State $\bm{\sigma} = \bm{0}$
+
+		\State \Return $\bm{\sigma}$, $\mathbb{c}_{\text{\sc aba}}$
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
 
 
 \end{document}

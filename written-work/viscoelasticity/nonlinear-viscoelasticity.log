@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  28 JUN 2021 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  29 JUN 2021 15:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -616,7 +616,11 @@ File: ./figures/odw.pdf Graphic file (type pdf)
 <use ./figures/odw.pdf>
 Package pdftex.def Info: ./figures/odw.pdf  used on input line 319.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
- [5] [6 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
+ [5]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+[6 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -628,20 +632,63 @@ clusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress-E.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
->] [7 <./figures/odw.pdf>]
+> <./figures/odw.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/odw.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>]
+<./figures/modw.pdf, id=163, 462.52798pt x 346.89601pt>
+File: ./figures/modw.pdf Graphic file (type pdf)
+<use ./figures/modw.pdf>
+Package pdftex.def Info: ./figures/modw.pdf  used on input line 342.
+(pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
+<./figures/carreau-lams.pdf, id=164, 462.52798pt x 346.89601pt>
+File: ./figures/carreau-lams.pdf Graphic file (type pdf)
+<use ./figures/carreau-lams.pdf>
+Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 358.
+(pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
+<./figures/carreau-etas.pdf, id=165, 462.52798pt x 346.89601pt>
+File: ./figures/carreau-etas.pdf Graphic file (type pdf)
+<use ./figures/carreau-etas.pdf>
+Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 362.
+(pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
+<./figures/carreau-ns.pdf, id=166, 462.52798pt x 346.89601pt>
+File: ./figures/carreau-ns.pdf Graphic file (type pdf)
+<use ./figures/carreau-ns.pdf>
+Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 367.
+(pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
+<./figures/carreau-as.pdf, id=167, 462.52798pt x 346.89601pt>
+File: ./figures/carreau-as.pdf Graphic file (type pdf)
+<use ./figures/carreau-as.pdf>
+Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 371.
+(pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
+ [7 <./figures/modw.pdf>] [8 <./figures/carreau-lams.pdf> <./figures/carreau-et
+as.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-etas.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+> <./figures/carreau-ns.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-ns.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./figures/carreau-as.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-as.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+>]
 Missing character: There is no c in font msbm10!
- [8]
+ [9] [10]
 Missing character: There is no c in font msbm10!
- [9] [10] (./nonlinear-viscoelasticity.aux)
+ [11] (./nonlinear-viscoelasticity.aux)
 Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
 \openout1 = `nonlinear-viscoelasticity.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11062 strings out of 492982
- 186336 string characters out of 6134897
- 454760 words of memory out of 5000000
- 14485 multiletter control sequences out of 15000+600000
+ 11088 strings out of 492982
+ 187101 string characters out of 6134897
+ 455760 words of memory out of 5000000
+ 14506 multiletter control sequences out of 15000+600000
  13168 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,40p,814b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -655,16 +702,18 @@ ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nonlinear-viscoelasticity.pdf (10 pages, 379490 bytes).
+m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on nonlinear-viscoelasticity.pdf (11 pages, 463935 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
+ 356 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

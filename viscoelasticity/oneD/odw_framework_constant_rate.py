@@ -57,7 +57,7 @@ for i_n in ns:
         print(eps_dot)
         sigmas.append(sigma(E_inf, E_s, K, i_n, epss, eps_dot)[0][-1])
 
-    plt.semilogx(eps_dots, sigmas, label=r'$n = ' + str(i_n) + '\,s$')
+    plt.semilogx(eps_dots, sigmas, label=r'$n = ' + str(i_n) + '$')
 
 format_and_save(f'{fig_path}/odw.pdf', save=True)
 

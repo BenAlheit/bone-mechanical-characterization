@@ -276,7 +276,7 @@ Fix incorrect sign:
 	\sigma = E^{\infty}\varepsilon- \tau \left[1-\exp\left(\dfrac{-\varepsilon}{\dot{\varepsilon}_{0} \tau}\right)\right]E^{s}\dot{\varepsilon}_{0} 
 \end{equation}
 
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\begin{subfigure}{0.48\textwidth}
 		\centering
@@ -303,15 +303,15 @@ Fix incorrect sign:
 Bone is assumed to be impregnated with blood and other biological fluids which are susceptible to shear thinning or thickening
 
 \begin{equation}
-	\sigma^{d} = \eta(\dot{\epsilon}^{d})\dot{\epsilon}^{d}
+\sigma^{d} = \eta(\dot{\epsilon}^{d})\dot{\epsilon}^{d}
 \end{equation}
 
 \begin{equation}
-	D = \eta(\dot{\epsilon}^{d})\left[\dot{\epsilon}^{d}\right]^{2} \geq 0 \,, \qquad \eta(\dot{\epsilon}^{d})\geq 0\,.
+D = \eta(\dot{\epsilon}^{d})\left[\dot{\epsilon}^{d}\right]^{2} \geq 0 \,, \qquad \eta(\dot{\epsilon}^{d})\geq 0\,.
 \end{equation}
 
 \begin{equation}
-	\eta(\dot{\epsilon}^{d}) = \eta_{0} |\dot{\epsilon}^{d}|^{n-1}
+\eta(\dot{\epsilon}^{d}) = \eta_{0} |\dot{\epsilon}^{d}|^{n-1}
 \end{equation}
 Can change slant. See for example Figure \ref{fig:odw}.
 \begin{figure}[!htb]
@@ -321,11 +321,57 @@ Can change slant. See for example Figure \ref{fig:odw}.
 	\label{fig:odw}	
 \end{figure}
 
+\subsubsection{Modified Ostwald-de Waele model}
+
+Bone is assumed to be impregnated with blood and other biological fluids which are susceptible to shear thinning or thickening
+
+\begin{equation}
+\sigma^{d} = \eta(\dot{\epsilon}^{d})\dot{\epsilon}^{d}
+\end{equation}
+
+\begin{equation}
+D = \eta(\dot{\epsilon}^{d})\left[\dot{\epsilon}^{d}\right]^{2} \geq 0 \,, \qquad \eta(\dot{\epsilon}^{d})\geq 0\,.
+\end{equation}
+
+\begin{equation}
+\eta(\dot{\epsilon}^{d}) = \eta_{0}\left[1+|\dot{\epsilon}^{d}|\right]^{n-1}
+\end{equation}
+Can change slant. See for example Figure \ref{fig:modw}. Fixes divide by 0 error.
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.65\linewidth]{modw}
+	\caption{ }
+	\label{fig:modw}	
+\end{figure}
+
 \subsubsection{Carreau--Yasuda model}
 
 \begin{equation}
 	\eta = \eta^{\infty} + \left[\eta^{0}-\eta^{\infty}\right]\left[1 + \left[\lambda \left|\dot{\epsilon}^{d}\right|\right]^{a}\right]^{\left[n-1\right]/a}
 \end{equation}
+
+
+\begin{figure}[!htb]
+	\centering
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{carreau-lams}
+	\end{subfigure}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{carreau-etas}
+	\end{subfigure}
+	
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{carreau-ns}
+	\end{subfigure}
+	\begin{subfigure}{0.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{carreau-as}
+	\end{subfigure}
+	
+\end{figure}
 
 \section{Going 3D}
 
@@ -435,6 +481,24 @@ Motivated by 1D Maxwell network:
 \bar{\bm{\sigma}}^{e} = \int_{-\infty}^{t} \exp\left(\dfrac{s-t}{\tau}\right)\bar{\mathbb{C}}^{s}\dot{\bar{\bm{\varepsilon}}} \,\d s
 \end{equation}
 
+\subsubsection{These special visc models}
+
+\begin{equation}
+	\bar{\bm{\sigma}}^{d} = \eta\left(\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|\right)\dot{\bar{\bm{\varepsilon}}}^{d}
+\end{equation}
+
+\begin{equation}
+	\pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}= \eta\left(\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|\right) \bm{I}\odot\bm{I} +\pder{\eta}{\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|} \dot{\bar{\bm{\varepsilon}}}^{d} \otimes \pder{\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|}{\dot{\bar{\bm{\varepsilon}}}^{d} }
+\end{equation}
+
+\begin{equation}
+	\pder{}{\dot{\bar{\varepsilon}}^{d}_{ij}}\left[\dot{\bar{\varepsilon}}^{d}_{mn}\dot{\bar{\varepsilon}}^{d}_{mn}\right]^{1/2} = \left[\dot{\bar{\varepsilon}}^{d}_{mn}\dot{\bar{\varepsilon}}^{d}_{mn}\right]^{-1/2} \dot{\bar{\varepsilon}}^{d}_{ij}
+\end{equation}
+
+
+\begin{equation}
+\pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}= \eta\left(\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|\right) \bm{I}\odot\bm{I} +\pder{\eta}{\left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|} \left|\left|\dot{\bar{\bm{\varepsilon}}}^{d}\right| \right|^{-1}\dot{\bar{\bm{\varepsilon}}}^{d} \otimes \dot{\bar{\bm{\varepsilon}}}^{d}
+\end{equation}
 
 \subsubsection{Ostwald-de Waele model}
 

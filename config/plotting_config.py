@@ -20,3 +20,13 @@ matplotlib.rcParams['text.latex.preamble'] = [
     r'\usepackage{amsmath}',
     r'\usepackage{amssymb}']
 
+
+def format_and_save(path, x_label=r'$\dot{\varepsilon}$', save=False):
+    plt.grid()
+    plt.legend()
+    plt.xlabel(x_label)
+    plt.ylabel(r'$\sigma$')
+    plt.tight_layout()
+    if save:
+        plt.savefig(path)
+

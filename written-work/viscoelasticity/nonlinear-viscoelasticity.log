@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  30 JUN 2021 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  5 JUL 2021 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,6 +463,14 @@ Package caption Info: float package is loaded.
 \c@subfigure=\count300
 \c@subtable=\count301
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -475,18 +483,18 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 (./nonlinear-viscoelasticity.aux)
 \openout1 = `nonlinear-viscoelasticity.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -500,8 +508,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'nonlinear-viscoelasticity.bbl' not found.
 
 No file nonlinear-viscoelasticity.bbl.
-Package biblatex Info: Reference section=0 on input line 28.
-Package biblatex Info: Reference segment=0 on input line 28.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -571,19 +579,19 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -593,28 +601,28 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./figures/e-stress.pdf, id=28, 462.52798pt x 346.89601pt>
 File: ./figures/e-stress.pdf Graphic file (type pdf)
 <use ./figures/e-stress.pdf>
-Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 330.
+Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 338.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress.pdf, id=29, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 334.
+Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 342.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress-tau.pdf, id=30, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-tau.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-tau.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 339
+Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 347
 .
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/e-dot-stress-E.pdf, id=31, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-E.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-E.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 343.
+Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 351.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/odw.pdf, id=32, 462.52798pt x 346.89601pt>
 File: ./figures/odw.pdf Graphic file (type pdf)
 <use ./figures/odw.pdf>
-Package pdftex.def Info: ./figures/odw.pdf  used on input line 366.
+Package pdftex.def Info: ./figures/odw.pdf  used on input line 374.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
  [6]
 
@@ -640,27 +648,27 @@ iple pdfs with page group included in a single page
 <./figures/modw.pdf, id=168, 462.52798pt x 346.89601pt>
 File: ./figures/modw.pdf Graphic file (type pdf)
 <use ./figures/modw.pdf>
-Package pdftex.def Info: ./figures/modw.pdf  used on input line 389.
+Package pdftex.def Info: ./figures/modw.pdf  used on input line 397.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
 <./figures/carreau-lams.pdf, id=169, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-lams.pdf Graphic file (type pdf)
 <use ./figures/carreau-lams.pdf>
-Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 405.
+Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 413.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/carreau-etas.pdf, id=170, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-etas.pdf Graphic file (type pdf)
 <use ./figures/carreau-etas.pdf>
-Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 409.
+Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 417.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/carreau-ns.pdf, id=171, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-ns.pdf Graphic file (type pdf)
 <use ./figures/carreau-ns.pdf>
-Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 414.
+Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 422.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
 <./figures/carreau-as.pdf, id=172, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-as.pdf Graphic file (type pdf)
 <use ./figures/carreau-as.pdf>
-Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 418.
+Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 426.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
  [8 <./figures/modw.pdf>] [9 <./figures/carreau-lams.pdf> <./figures/carreau-et
 as.pdf
@@ -675,9 +683,7 @@ n: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-as.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->]
-Missing character: There is no c in font msbm10!
- [10] [11]
+>] [10] [11]
 Missing character: There is no c in font msbm10!
  [12] [13] (./nonlinear-viscoelasticity.aux)
 Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
@@ -685,10 +691,10 @@ Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11088 strings out of 492982
- 187101 string characters out of 6134897
- 455760 words of memory out of 5000000
- 14506 multiletter control sequences out of 15000+600000
+ 11137 strings out of 492982
+ 187821 string characters out of 6134897
+ 456948 words of memory out of 5000000
+ 14551 multiletter control sequences out of 15000+600000
  13168 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,40p,814b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -710,7 +716,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nonlinear-viscoelasticity.pdf (13 pages, 467970 bytes).
+Output written on nonlinear-viscoelasticity.pdf (13 pages, 468177 bytes).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
  315 compressed objects within 4 object streams

@@ -19,11 +19,19 @@
 
 \graphicspath{{./figures/}}
 
+\usepackage{color}
+
 \renewcommand{\d}{\text{d}}
 \newcommand{\tr}{\text{tr}}
 \newcommand{\der}[2]{\dfrac{\text{d} #1}{\text{d} #2}}
-
 \newcommand{\pder}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\sig}{\bm{\sigma}}
+\newcommand{\bsig}{\bar{\bm{\sigma}}}
+\newcommand{\hsig}{\hat{\bm{\sigma}}}
+\newcommand{\eps}{\bm{\varepsilon}}
+\newcommand{\beps}{\bar{\bm{\varepsilon}}}
+\newcommand{\heps}{\hat{\bm{\varepsilon}}}
+
 
 \begin{document}
 
@@ -468,27 +476,51 @@ Motivated by 1D Maxwell network:
 	\bm{\sigma} &=\hat{\bm{\sigma}} +\bar{\bm{\sigma}}\,.
 \end{align}
 
-\subsection{Framework}
+\subsubsection{Thermodynamic considerations}
+{\color{red} Messy and tricky... something to consider... actually this is prior to the choice of subconstitutive models. Probably been addressed before. Go look in the literature.}
+
+\begin{equation}
+	D = \bm{\sigma}:\bm{\varepsilon} - \dot{\Psi} \geq 0
+\end{equation}
+
+\begin{equation}
+	D = \left[\bm{\sigma}^{b} + \sum_{i}^{n}\bm{\sigma}^{e}_{i}\right] :\bm{\varepsilon} - \dot{\Psi} \geq 0
+\end{equation}
+
+\begin{equation}
+	\left[\bsig^{e} + \hsig^{e}\right] : \left[\beps^{e} + \heps^{e}\right] = \bsig^{e}:\beps^{e} + \hsig^{e}:\beps^{e} + \bsig^{e} : \heps^{e} + \hsig^{e}: \heps^{e}
+\end{equation}
+
+\begin{equation}
+	\bsig^{e}:\eps = \bsig^{e}:\left[\beps + \heps\right] = \bsig^{e}:\beps + \bsig^{e}:\heps = \bsig^{s}:\beps^{s} + \bsig^{d}:\beps^{d} + \bsig^{e}:\heps
+\end{equation}
+
+\begin{equation}
+D_{i} = \bar{\bm{\sigma}}_{i}^{s}:\bar{\bm{\varepsilon}}_{i}^{s} - \dot{\Psi}
+\end{equation}
 
 
-\begin{algorithm}[!htb]
-	\caption{Procedure for determining stress and constitutive tensor required by {\sc abaqus} for a compressible material given the derivatives of its strain energy function.}
-	\begin{algorithmic}[1]
-		\Procedure{increment\_viscoelastic\_material}{$\bm{\varepsilon}^{n+1}$, $\bar{\bm{\varepsilon}}^{d(n)}$}
-		\State $\hat{\bm{\varepsilon}} = \dfrac{1}{3}\bm{I}\tr\left(\bm{\varepsilon}^{n+1}\right) $
-		\State $\bar{\bm{\varepsilon}} = \bm{\varepsilon}^{n+1} - \hat{\bm{\varepsilon}}$
-		\State $\bm{\sigma}^{\infty} = 3\lambda\hat{\bm{\varepsilon}} + 2 \mu \bm{\varepsilon}^{n+1}$
-		\State $\bar{\bm{\sigma}}^{\infty}$(:, :, :) = \Call{CALC\_BIG\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
-		\State $J = \det \bm{F}$
-		\State $\bm{\sigma} = \bm{0}$
-		
-		\State \Return $\bm{\sigma}$, $\mathbb{c}_{\text{\sc aba}}$
-		\EndProcedure
-	\end{algorithmic}
-\end{algorithm}
+\subsubsection{Framework}
+
+%
+%\begin{algorithm}[!htb]
+%	\caption{Procedure for determining stress and constitutive tensor required by {\sc abaqus} for a compressible material given the derivatives of its strain energy function.}
+%	\begin{algorithmic}[1]
+%		\Procedure{increment\_viscoelastic\_material}{$\bm{\varepsilon}^{n+1}$, $\bar{\bm{\varepsilon}}^{d(n)}$}
+%		\State $\hat{\bm{\varepsilon}} = \dfrac{1}{3}\bm{I}\tr\left(\bm{\varepsilon}^{n+1}\right) $
+%		\State $\bar{\bm{\varepsilon}} = \bm{\varepsilon}^{n+1} - \hat{\bm{\varepsilon}}$
+%		\State $\bm{\sigma}^{\infty} = 3\lambda\hat{\bm{\varepsilon}} + 2 \mu \bm{\varepsilon}^{n+1}$
+%		\State $\bar{\bm{\sigma}}^{\infty}$(:, :, :) = \Call{CALC\_BIG\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
+%		\State $J = \det \bm{F}$
+%		\State $\bm{\sigma} = \bm{0}$
+%		
+%		\State \Return $\bm{\sigma}$, $\mathbb{c}_{\text{\sc aba}}$
+%		\EndProcedure
+%	\end{algorithmic}
+%\end{algorithm}
 
 
-\subsection{Tangent}
+\subsubsection{Tangent}
 
 \begin{equation}
 	\pder{\bar{\bm{\sigma}}^{e}}{\bm{\varepsilon}_{n+1}} = \pder{}{\bm{\varepsilon}_{n+1}}\bar{\bm{\sigma}}^{s}\left(\bar{\bm{\varepsilon}}_{n+1} - \bar{\bm{\varepsilon}}^{d}_{n+1}\right) = \pder{}{\bm{\varepsilon}_{n+1}}\bar{\bm{\sigma}}^{d}\left(\dfrac{1}{\Delta t}\left[\bar{\bm{\varepsilon}}^{d}_{n+1} - \bar{\bm{\varepsilon}}^{d}_{n}\right]\right) 
@@ -522,6 +554,7 @@ Motivated by 1D Maxwell network:
 
 Can verify later with differencing procedure
 
+\subsubsection{Algorithm for implementation}
 
 \subsection{Some models}
 
@@ -616,21 +649,6 @@ Can verify later with differencing procedure
 \begin{equation}
 	\pder{\bm{r}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} = \pder{\bar{\bm{\sigma}}^{d}\left(\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}\right)}{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}\pder{\dot{\bar{\bm{\varepsilon}}}_{n+1}^{d}}{\bar{\bm{\varepsilon}}_{n+1}^{d}} + \pder{\bar{\bm{\sigma}}^{s}}{\bar{\bm{\varepsilon}}_{n+1}^{s}}
 \end{equation}
-
-\begin{algorithm}[!htb]
-	\caption{Procedure for determining stress and constitutive tensor required by {\sc abaqus} for a compressible material given the derivatives of its strain energy function.}
-	\label{alg:comp-umat}
-	\begin{algorithmic}[1]
-		\Procedure{increment\_viscoelastic\_material}{$\bm{\varepsilon}$}
-		\State $\bm{A}$(:, :, :) = \Call{CALC\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
-		\State $\mathbb{A}$(:, :, :) = \Call{CALC\_BIG\_A}{$\bm{F}$, $\bm{a}_{0}$, $\bm{b}_{0}$}
-		\State $J = \det \bm{F}$
-		\State $\bm{\sigma} = \bm{0}$
-
-		\State \Return $\bm{\sigma}$, $\mathbb{c}_{\text{\sc aba}}$
-		\EndProcedure
-	\end{algorithmic}
-\end{algorithm}
 
 
 \end{document}

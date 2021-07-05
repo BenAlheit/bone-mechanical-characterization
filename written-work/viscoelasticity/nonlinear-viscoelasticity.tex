@@ -153,6 +153,53 @@ Define
 \begin{equation}
 	\der{r}{\varepsilon_{n+1}^{d}} = \dfrac{1}{\Delta t_{n+1}}\der{\sigma^{d}}{\dot{\varepsilon}^{d}} + \der{\sigma^{s}}{\varepsilon^{s}}
 \end{equation}
+-------------------------------------
+\begin{equation}
+	F = \eta_{1}\dot{d}_{1} = k_{2}d_{2}
+\end{equation}
+
+\begin{equation}
+	d = d_{1} + d_{2}
+\end{equation}
+
+\begin{equation}
+\dot{d} = \dot{d}_{1} + \dot{d}_{2}
+\end{equation}
+
+\begin{equation}
+	\dot{F} = K\dot{d}
+\end{equation}
+
+\begin{equation}
+k_{2}\dot{d}_{2} = K\left[ \dot{d}_{1} + \dot{d}_{2}\right]
+\end{equation}
+
+\begin{equation}
+	\eta_{1}\dot{d}_{1} = Kd
+\end{equation}
+
+\begin{equation}
+	\dot{\sigma}^{e} = \mathbb{C}^{e}\dot{\varepsilon} = \dot{\sigma}^{d} = \dot{\sigma}^{s} = \mathbb{C}^{s} \dot{\varepsilon}^{s} = \mathbb{C}^{s} \left[\dot{\varepsilon} - \dot{\varepsilon}^{d}\right] =  \mathbb{C}^{s} \left[\dot{\varepsilon} - \mathbb{C}^{d-1}\sigma^{e} \right]
+\end{equation}
+----------------------------
+
+\begin{equation}
+\der{\sigma^{e}}{\varepsilon_{n+1}} = \der{ }{\varepsilon_{n+1}}\sigma^{s}(\varepsilon_{n+1} - \varepsilon_{n+1}^{d})  = \der{ }{\varepsilon_{n+1}}\sigma^{d}\left( \dfrac{1}{\Delta t_{n+1}}\left[\varepsilon_{n+1}^{d} - \varepsilon_{n}^{d}\right]\right)
+\end{equation}
+
+
+\begin{equation}
+\der{\sigma^{e}}{\varepsilon_{n+1}} = \der{\sigma^{s}}{\varepsilon^{s}_{n+1}}\left[1 - \der{\varepsilon_{n+1}^{d}}{\varepsilon_{n+1}} \right]    = \der{\sigma^{d}}{\dot{\varepsilon}^{d}_{n+1}}\left[ \dfrac{1}{\Delta t_{n+1}}\der{\varepsilon_{n+1}^{d}}{\varepsilon_{n+1}}\right]
+\end{equation}
+
+\begin{equation}
+\der{\sigma^{s}}{\varepsilon^{s}_{n+1}}       = \left[\der{\sigma^{s}}{\varepsilon^{s}_{n+1}}    +\der{\sigma^{d}}{\dot{\varepsilon}^{d}_{n+1}}\dfrac{1}{\Delta t_{n+1}}\right]\der{\varepsilon_{n+1}^{d}}{\varepsilon_{n+1}}
+\end{equation}
+
+
+\begin{equation}
+\der{\varepsilon_{n+1}^{d}}{\varepsilon_{n+1}} = \left[\der{\sigma^{s}}{\varepsilon^{s}_{n+1}}    +\der{\sigma^{d}}{\dot{\varepsilon}^{d}_{n+1}}\dfrac{1}{\Delta t_{n+1}}\right]^{-1}\der{\sigma^{s}}{\varepsilon^{s}_{n+1}} 
+\end{equation}
 
 \subsection{Some temporal approximations}
 
@@ -439,6 +486,41 @@ Motivated by 1D Maxwell network:
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
+
+
+\subsection{Tangent}
+
+\begin{equation}
+	\pder{\bar{\bm{\sigma}}^{e}}{\bm{\varepsilon}_{n+1}} = \pder{}{\bm{\varepsilon}_{n+1}}\bar{\bm{\sigma}}^{s}\left(\bar{\bm{\varepsilon}}_{n+1} - \bar{\bm{\varepsilon}}^{d}_{n+1}\right) = \pder{}{\bm{\varepsilon}_{n+1}}\bar{\bm{\sigma}}^{d}\left(\dfrac{1}{\Delta t}\left[\bar{\bm{\varepsilon}}^{d}_{n+1} - \bar{\bm{\varepsilon}}^{d}_{n}\right]\right) 
+\end{equation}
+
+\begin{equation}
+\pder{\bar{\bm{\sigma}}^{e}}{\bm{\varepsilon}_{n+1}} = \pder{\bar{\bm{\sigma}}^{s}}{\bar{\bm{\varepsilon}}^{s}} \left[\pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}} - \pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}}\right] = \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}} \left[\dfrac{1}{\Delta t}\pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}} \right]
+\end{equation}
+
+
+\begin{equation}
+\pder{\bar{\bm{\sigma}}^{e}}{\bm{\varepsilon}_{n+1}} = \bar{\mathbb{C}}^{s} \left[\pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}} - \pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}}\right] =  \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}\left[\dfrac{1}{\Delta t}\pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}} \right]
+\end{equation}
+
+\begin{equation}
+\bar{\mathbb{C}}^{s} \pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}}  = \left[\bar{\mathbb{C}}^{s} +  \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}\dfrac{1}{\Delta t}\right]\pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}} 
+\end{equation}
+
+\begin{equation}
+\pder{\bar{\bm{\varepsilon}}^{d}_{n+1}}{\bm{\varepsilon}_{n+1}}  = \left[\bar{\mathbb{C}}^{s} +  \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}\dfrac{1}{\Delta t}\right]^{-1}\bar{\mathbb{C}}^{s} \pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}}  
+\end{equation}
+
+
+\begin{equation}
+\pder{\bar{\bm{\sigma}}^{e}}{\bm{\varepsilon}_{n+1}}  = \dfrac{1}{\Delta t} \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}\left[\bar{\mathbb{C}}^{s} +  \pder{\bar{\bm{\sigma}}^{d}}{\dot{\bar{\bm{\varepsilon}}}^{d}}\dfrac{1}{\Delta t}\right]^{-1}\bar{\mathbb{C}}^{s} \pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}}  
+\end{equation}
+
+\begin{equation}
+	\pder{\bar{\bm{\varepsilon}}_{n+1}}{\bm{\varepsilon}_{n+1}}  = \bm{I} \odot \bm{I} - \dfrac{1}{3}\bm{I} \otimes \bm{I} \,.
+\end{equation}
+
+Can verify later with differencing procedure
 
 
 \subsection{Some models}

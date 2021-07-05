@@ -353,37 +353,6 @@ endsubroutine
 
     external :: sig_s, dsig_s_depse, sig_d, dsig_d_depsd_dot
 
-!    interface
-!        subroutine sig_s(sig_s_val, sig_s_params, eps_e, n_s)
-!            integer, intent(in) :: n_s
-!            doubleprecision, intent(in) :: eps_e(6), sig_s_params(n_s)
-!            doubleprecision, intent(out) :: sig_s_val(6)
-!        end subroutine sig_s
-!        subroutine dsig_s_depse(dsig_s_depse_val, sig_s_params, eps_e, n_s)
-!            integer, intent(in) :: n_s
-!            doubleprecision, intent(in) :: eps_e(6), sig_s_params(n_s)
-!            doubleprecision, intent(out) :: dsig_s_depse_val(6, 6)
-!        end subroutine dsig_s_depse
-!        subroutine sig_d(sig_d_val, sig_d_params, eps_d_dot, n_d)
-!            integer, intent(in) :: n_d
-!            doubleprecision, intent(in) :: eps_d_dot(6), sig_d_params(n_d)
-!            doubleprecision, intent(out) :: sig_d_val(6)
-!        end subroutine sig_d
-!        subroutine dsig_d_depsd_dot(dsig_d_depse_val, sig_d_params, eps_d_dot, n_d)
-!            integer, intent(in) :: n_d
-!            doubleprecision, intent(in) :: eps_d_dot(6), sig_d_params(n_d)
-!            doubleprecision, intent(out) :: dsig_d_depse_val(6, 6)
-!        end subroutine dsig_d_depsd_dot
-!!        function inv(A) result(Ainv)
-!!            implicit none
-!!            doubleprecision, intent(in) :: A(:, :)
-!!            doubleprecision :: Ainv(size(A, 1), size(A, 2))
-!!            doubleprecision :: work(size(A, 1))            ! work array for LAPACK
-!!            integer :: n, info, ipiv(size(A, 1))     ! pivot indices
-!!        end function inv
-!    end interface
-
-    !    res_norm = 1
     eps_d_n1 = eps_n1
 
     eps_d_dot = (eps_d_n1 - eps_d_n) / dt
@@ -396,7 +365,7 @@ endsubroutine
     res = sig_dn1 - sig_s_val
     res_norm = dot_product(res, res)
 
-    do while (res_norm > 1e-6)
+    do while (res_norm > 1e-10)
 
         !        call lin_viscd_sig_d_depsd_dot(d_sig_d_depsd_dot_val, [eta], eps_d_dot, 1)
         !        call iso_lin_elastic_sig_d_depss(d_sig_s_depss_val, [mu], eps_d_dot_bar, 1)
@@ -413,7 +382,7 @@ endsubroutine
         !        sig_s_val = mu * (eps_n1 - eps_d_n1)
 
         res = sig_dn1 - sig_s_val
-        res_norm = dot_product(res, res)
+        res_norm = dot_product(res, res) / (dot_product(sig_dn1, sig_dn1)+1d0)
 
     end do
 
@@ -486,8 +455,8 @@ function trace_voigt(voigt_vec) result (out)
     integer :: i
     doubleprecision :: out
 
-    out = 0d0
-    forall (i = 1:3) out = out + voigt_vec(i)
+    out = sum(voigt_vec(1:3))
+!    forall (i = 1:3) out = out + voigt_vec(i)
 
 end function trace_voigt
 
@@ -556,8 +525,12 @@ program main
 !                eps_d_n1, &
 !                sig_dn1, &
 !                0.1d0)
-!
-!        a=0
+        call increment_lin_visc_elastic(0.d0, 0.d0, 1000000.0d0, 499500499.50049955d0, &
+!                [2.00001d0, 2.d0, 2.d0, 0.d0, 0.d0, 0.d0], &
+                [2.d0, 2.d0, 2.00001d0, 0.d0, 0.d0, 0.d0], &
+                [1.d0, 1.d0, 1.d0, 0.d0, 0.d0, 0.d0], &
+                0.01d0, eps_d_n1, sig_dn1)
+        a=0
 !!
 !        call increment_eps_bar(iso_lin_elastic, iso_lin_elastic_sig_d_depss, [2d0], 1, &
 !                lin_visc, lin_viscd_sig_d_depsd_dot, [1d0], 1, &

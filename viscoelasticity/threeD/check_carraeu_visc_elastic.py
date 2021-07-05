@@ -38,7 +38,7 @@ a = 1
 lam = 1
 
 epss = np.linspace(0, 0.01, 200)
-eps_dots = np.logspace(-5, 2, 50)
+eps_dots = np.logspace(-5, 2, 150)
 E_ss = np.linspace(0.8e9, 1.2e9, 5)
 taus = np.logspace(-5, -1, 5)
 a_s = np.logspace(-1, 1.5, 5)

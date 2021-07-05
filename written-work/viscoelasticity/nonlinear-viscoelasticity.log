@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  29 JUN 2021 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  30 JUN 2021 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,38 +589,38 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-<./figures/e-stress.pdf, id=24, 462.52798pt x 346.89601pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+<./figures/e-stress.pdf, id=28, 462.52798pt x 346.89601pt>
 File: ./figures/e-stress.pdf Graphic file (type pdf)
 <use ./figures/e-stress.pdf>
-Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 283.
+Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 330.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress.pdf, id=25, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress.pdf, id=29, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 287.
+Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 334.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress-tau.pdf, id=26, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress-tau.pdf, id=30, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-tau.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-tau.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 292
+Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 339
 .
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress-E.pdf, id=27, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress-E.pdf, id=31, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-E.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-E.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 296.
+Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 343.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/odw.pdf, id=28, 462.52798pt x 346.89601pt>
+<./figures/odw.pdf, id=32, 462.52798pt x 346.89601pt>
 File: ./figures/odw.pdf Graphic file (type pdf)
 <use ./figures/odw.pdf>
-Package pdftex.def Info: ./figures/odw.pdf  used on input line 319.
+Package pdftex.def Info: ./figures/odw.pdf  used on input line 366.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
- [5]
+ [6]
 
-LaTeX Warning: Text page 6 contains only floats.
+LaTeX Warning: Text page 7 contains only floats.
 
-[6 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
+[7 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -637,32 +637,32 @@ usion: multiple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/odw.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
-<./figures/modw.pdf, id=163, 462.52798pt x 346.89601pt>
+<./figures/modw.pdf, id=168, 462.52798pt x 346.89601pt>
 File: ./figures/modw.pdf Graphic file (type pdf)
 <use ./figures/modw.pdf>
-Package pdftex.def Info: ./figures/modw.pdf  used on input line 342.
+Package pdftex.def Info: ./figures/modw.pdf  used on input line 389.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
-<./figures/carreau-lams.pdf, id=164, 462.52798pt x 346.89601pt>
+<./figures/carreau-lams.pdf, id=169, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-lams.pdf Graphic file (type pdf)
 <use ./figures/carreau-lams.pdf>
-Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 358.
+Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 405.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-etas.pdf, id=165, 462.52798pt x 346.89601pt>
+<./figures/carreau-etas.pdf, id=170, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-etas.pdf Graphic file (type pdf)
 <use ./figures/carreau-etas.pdf>
-Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 362.
+Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 409.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-ns.pdf, id=166, 462.52798pt x 346.89601pt>
+<./figures/carreau-ns.pdf, id=171, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-ns.pdf Graphic file (type pdf)
 <use ./figures/carreau-ns.pdf>
-Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 367.
+Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 414.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-as.pdf, id=167, 462.52798pt x 346.89601pt>
+<./figures/carreau-as.pdf, id=172, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-as.pdf Graphic file (type pdf)
 <use ./figures/carreau-as.pdf>
-Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 371.
+Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 418.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
- [7 <./figures/modw.pdf>] [8 <./figures/carreau-lams.pdf> <./figures/carreau-et
+ [8 <./figures/modw.pdf>] [9 <./figures/carreau-lams.pdf> <./figures/carreau-et
 as.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-etas.pdf): PDF inclus
@@ -677,9 +677,9 @@ pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-as.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
 Missing character: There is no c in font msbm10!
- [9] [10]
+ [10] [11]
 Missing character: There is no c in font msbm10!
- [11] (./nonlinear-viscoelasticity.aux)
+ [12] [13] (./nonlinear-viscoelasticity.aux)
 Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
 \openout1 = `nonlinear-viscoelasticity.run.xml'.
 
@@ -710,10 +710,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nonlinear-viscoelasticity.pdf (11 pages, 463935 bytes).
+Output written on nonlinear-viscoelasticity.pdf (13 pages, 467970 bytes).
 PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
+ 363 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

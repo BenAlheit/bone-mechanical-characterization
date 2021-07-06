@@ -17,7 +17,7 @@ eps_dots = np.logspace(-3, 5, 10)
 E_ss = np.linspace(0.8e9, 1.2e9, 5)
 taus = np.logspace(-5, -1, 5)
 
-fig_path = '../../written-work/viscoelasticity/figures/'
+fig_path = '../../written-work/viscoelasticity/scratch/figures/'
 
 
 def sigma(E_inf, E_s, tau, eps, eps_dot):

@@ -20,7 +20,7 @@ taus = np.logspace(-5, -1, 5)
 
 ns = np.logspace(-1, 1, 5)
 
-fig_path = '../../written-work/viscoelasticity/figures/'
+fig_path = '../../written-work/viscoelasticity/scratch/figures/'
 
 
 def sigma(E_inf, E_s, K, n, eps, eps_dot):

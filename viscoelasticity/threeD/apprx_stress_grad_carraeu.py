@@ -44,6 +44,7 @@ def apprx_dsig_deps(eps_n1, eps_dn, dt):
                                                                        n, a,
                                                                        eta_0, eta_inf,
                                                                        mu_s, eps_n1, eps_dn, dt)
+
     d_eps = 1.e-7
     C = np.zeros([6, 6])
     for i in range(6):
@@ -67,11 +68,5 @@ proj[range(6), range(6)] += 1
 eye6 = np.eye(6, 6)
 
 C_approx = apprx_dsig_deps(eps_n1, eps_dn, dt)
-
-# C_an_fort = sm.solid_mechanics.dsig_bar_e_deps_n1(sm.solid_mechanics.iso_lin_elastic_sig_d_depss, [mu_s],
-#                                   sm.solid_mechanics.lin_viscd_sig_d_depsd_dot, [eta_d],
-#                                   eps_n1, eps_dn, eps_dn1, dt)
-
 C_an_fort = sm.solid_mechanics.carraeu_visc_dsig_bar_e_deps_n1(mu_s, lam, a, n, eta_0, eta_inf, eps_n1, eps_dn, eps_dn1, dt)
-# C_an_fort = sm.solid_mechanics.lin_visc_dsig_bar_e_deps_n1(mu_s, eta_d, eps_n1, eps_dn, eps_dn1, dt)
 a = 0

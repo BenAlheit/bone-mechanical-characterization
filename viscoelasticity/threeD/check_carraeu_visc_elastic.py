@@ -17,7 +17,7 @@ tau = 1e-3
 
 save=False
 
-fig_path = '../../written-work/viscoelasticity/figures/'
+fig_path = '../../written-work/viscoelasticity/scratch/figures/'
 
 
 def e_v_2_lam_mu(E, v):

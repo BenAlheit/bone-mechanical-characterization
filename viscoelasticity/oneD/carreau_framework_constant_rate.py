@@ -31,7 +31,7 @@ ns = np.linspace(0.98, 0.9999, 5)
 lams = np.logspace(-1, 1, 5)
 eta_inf_mults = np.logspace(3, 10, 5)
 
-fig_path = '../../written-work/viscoelasticity/figures/'
+fig_path = '../../written-work/viscoelasticity/scratch/figures/'
 
 
 def sigma(E_inf, E_s, eta_0, eta_inf, lam, n, a, eps, eps_dot):

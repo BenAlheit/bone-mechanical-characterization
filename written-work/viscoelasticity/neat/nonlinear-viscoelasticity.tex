@@ -1,0 +1,45 @@
+%\documentclass[12pt]{article}
+%
+%\include{./package-style-defs}
+%\graphicspath{{./figures/}}
+%
+%\makenomenclature
+%
+%\begin{document}
+%\mbox{}
+%\nomenclature{\(c\)}{Speed of light in a vacuum}
+%\nomenclature{\(h\)}{Planck constant}
+%
+%\printnomenclature
+%
+%\end{document}
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{nomencl}
+\makenomenclature
+
+%% This code creates the groups
+% -----------------------------------------
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\item[\bfseries
+	\ifstrequal{#1}{P}{Physics constants}{%
+		\ifstrequal{#1}{N}{Number sets}{%
+			\ifstrequal{#1}{O}{Other symbols}{}}}%
+	]}
+% -----------------------------------------
+
+\begin{document}
+	\mbox{}
+	
+	\nomenclature[P]{\(c\)}{Speed of light in a vacuum}
+	\nomenclature[P]{\(h\)}{Planck constant}
+	\nomenclature[P]{\(G\)}{Gravitational constant}
+	\nomenclature[N]{\(\mathbb{R}\)}{Real numbers}
+	\nomenclature[N]{\(\mathbb{C}\)}{Complex numbers}
+	\nomenclature[N]{\(\mathbb{H}\)}{Quaternions}
+	\nomenclature[O]{\(V\)}{Constant volume}
+	\nomenclature[O]{\(\rho\)}{Friction index}
+	
+	\printnomenclature
+\end{document}

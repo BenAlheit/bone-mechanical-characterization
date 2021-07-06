@@ -16,7 +16,7 @@ epss = np.linspace(0, 0.01, 200)
 eps_dots = np.logspace(-3, 5, 1000)
 
 
-fig_path = '../../written-work/viscoelasticity/figures/'
+fig_path = '../../written-work/viscoelasticity/scratch/figures/'
 
 
 def e_v_2_lam_mu(E, v):

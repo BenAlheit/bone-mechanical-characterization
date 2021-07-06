@@ -1,0 +1,26 @@
+\begin{thenomenclature} 
+
+ \nomgroup{N}
+
+  \item [{\(\mathbb{C}\)}]\begingroup Complex numbers\nomeqref {0}
+		\nompageref{1}
+  \item [{\(\mathbb{H}\)}]\begingroup Quaternions\nomeqref {0}
+		\nompageref{1}
+  \item [{\(\mathbb{R}\)}]\begingroup Real numbers\nomeqref {0}
+		\nompageref{1}
+
+ \nomgroup{O}
+
+  \item [{\(\rho\)}]\begingroup Friction index\nomeqref {0}
+		\nompageref{1}
+  \item [{\(V\)}]\begingroup Constant volume\nomeqref {0}\nompageref{1}
+
+ \nomgroup{P}
+
+  \item [{\(c\)}]\begingroup Speed of light in a vacuum\nomeqref {0}
+		\nompageref{1}
+  \item [{\(G\)}]\begingroup Gravitational constant\nomeqref {0}
+		\nompageref{1}
+  \item [{\(h\)}]\begingroup Planck constant\nomeqref {0}\nompageref{1}
+
+\end{thenomenclature}

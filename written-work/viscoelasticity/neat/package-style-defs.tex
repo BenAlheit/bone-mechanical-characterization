@@ -10,8 +10,16 @@
 \usepackage[margin=0.8in,]{geometry} % Make margins 0.8in inch
 \linespread{1.25} % Use 1.5 linespacing (\linespread{x} standard is 1.2, 1.2*x = 1.5 => x = 1.25)
 \usepackage{graphicx} % Include images
+\usepackage{hyperref} % Use hpyerlinks
 \usepackage{nomencl}
 \makenomenclature
+\usepackage{etoolbox}
+\renewcommand\nomgroup[1]{%
+	\item[\bfseries
+	\ifstrequal{#1}{P}{Physics constants}{%
+		\ifstrequal{#1}{N}{Number sets}{%
+			\ifstrequal{#1}{O}{Other symbols}{}}}%
+	]}
 \usepackage{subcaption} 
 
 

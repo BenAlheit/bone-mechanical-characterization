@@ -1,35 +1,25 @@
-%\documentclass[12pt]{article}
-%
-%\include{./package-style-defs}
-%\graphicspath{{./figures/}}
-%
-%\makenomenclature
-%
-%\begin{document}
-%\mbox{}
-%\nomenclature{\(c\)}{Speed of light in a vacuum}
-%\nomenclature{\(h\)}{Planck constant}
-%
-%\printnomenclature
-%
-%\end{document}
-\documentclass{article}
-\usepackage{amssymb}
-\usepackage{nomencl}
-\makenomenclature
+\documentclass[12pt]{article}
 
-%% This code creates the groups
-% -----------------------------------------
-\usepackage{etoolbox}
-\renewcommand\nomgroup[1]{%
-	\item[\bfseries
-	\ifstrequal{#1}{P}{Physics constants}{%
-		\ifstrequal{#1}{N}{Number sets}{%
-			\ifstrequal{#1}{O}{Other symbols}{}}}%
-	]}
-% -----------------------------------------
+\include{./package-style-defs}
+\graphicspath{{./figures/}}
+\bibliography{nonlinear-viscoelasticity.bib}
 
 \begin{document}
+
+\tableofcontents
+
+\begin{abstract}
+	{\color{red}
+	\begin{itemize}
+		\item Linear viscoelastic models are not able to fit full strain rate uniaxial loading data for bone well \cite{Cloete2014}. Furthermore, biomechanics and the characterization of biological materials is rapidly evolving. As biological solids are impregnated with biological fluids which typically display non-Newtonian behaviour it stands to reason that many biological materials which are yet to be mechanically characterized could display non-linear viscoelastic behaviour. Hence, the existence of a flexible framework for non-linear viscoelasticity is an imperative in the field of biomechanics.
+		\item A framework of non-linear viscoelasticity in an infinitesimal setting does not appear to exist in the literature and so one is developed here.
+		\item A generalized Maxwell model is adopted without \textit{a priori} assumption of the constitutive behaviour of the components in the Maxwell elements.
+		\item The crux is to enforce that viscous and elastic stresses in the dashpot and spring, respectively, are equal. In an incremental (temporally discretized) setting this is achieved by constructing a residual function and applying local (integration point level) Newton-Raphson iterations to determine the viscous strain (that is, the strain of the dashpot) at the next iteration such that the viscous and elastic stresses are equal.
+		\item This framework can be extended to finite strains and possesses some advantages over current finite strain non-linear viscoelastic models \cite{Reese1998}. In particular, the model need not be formulated in terms of principal stretches. 
+	\end{itemize}
+}
+\end{abstract}	
+	
 	\mbox{}
 	
 	\nomenclature[P]{\(c\)}{Speed of light in a vacuum}
@@ -42,4 +32,90 @@
 	\nomenclature[O]{\(\rho\)}{Friction index}
 	
 	\printnomenclature
+
+\section{Introduction}	
+
+
+\section{Small strain non-linear viscoelasticity in 1D}
+
+\subsection{Maxwell model kinetics and kinematics}
+
+\subsection{Thermodynamic considerations}
+
+\subsection{Temporal discretization}
+
+\subsection{The framework}
+
+\subsubsection{Satisfying the axioms of the Maxwell model}
+
+\subsection{Some models and their behaviour}
+
+\subsubsection{Linear viscoelasticity}
+
+\subsubsection{Ostwald-de Waele model}
+
+\subsubsection{Modified Ostwald-de Waele model}
+
+\subsubsection{Carreau--Yasuda model}
+
+\subsubsection{Model behaviour}
+
+\subsubsection*{Instant stress}
+\subsubsection*{Instant strain}
+\subsubsection*{Constant strain rate}
+
+
+\subsection{Fitting models to data}
+
+\section{Small strain non-linear viscoelasticity in 3D}
+
+\subsection{Isochoric--volumetric split}
+
+\subsection{Maxwell model kinetics and kinematics}
+
+\subsection{Thermodynamic considerations}
+
+\subsection{The framework \label{sec:frame-work-1d}}
+
+\subsubsection{Satisfying the axioms of the Maxwell model}
+
+\subsection{Some models and their behaviour}
+
+We focus on the viscous component of the model assuming linear behaviour for the elastic component. However, linear behaviour of the elastic component is not a requirement for the framework presented in Section \ref{sec:frame-work-1d}. We take inspiration from non-Newtonian models commonly used for biological fluids.
+
+\subsubsection{Linear viscoelasticity}
+
+\subsubsection{Ostwald-de Waele model}
+
+\subsubsection{Modified Ostwald-de Waele model}
+
+\subsubsection{Carreau--Yasuda model}
+
+\subsubsection{Model behaviour}
+
+\subsubsection*{Instant stress}
+\subsubsection*{Instant strain}
+\subsubsection*{Constant strain rate}
+
+\subsection{Fitting models to data}
+
+\section{Computational examples}
+
+\subsection{Inverse FE to fit models??}
+
+\subsection{Impact loading on bone: comparison of results for different models}
+
+
+\printbibliography
+
+\appendix
+
+\section{Other temporal approximations}
+
+\section{Why it's incorrect to simply insert a new viscosity at each time-step}
+
+\section{Some more detailed maths (maybe)}
+
+\section{Extension to finite strain}
+
 \end{document}

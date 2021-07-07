@@ -1,0 +1,141 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Cloete2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CTJ}{%
+         family={Cloete},
+         familyi={C\bibinitperiod},
+         given={T.\bibnamedelima J.},
+         giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Paul},
+         familyi={P\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IEB}{%
+         family={Ismail},
+         familyi={I\bibinitperiod},
+         given={E.\bibnamedelima B.},
+         giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{Bovine cortical bone,Constitutive model,Hopkinson bar,Intermediate
+  strain rate,Viscoelasticity,Wedge bar}
+    \strng{namehash}{CTJPGIEB1}
+    \strng{fullhash}{CTJPGIEB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Detailed knowledge of the dynamic viscoelastic properties of bone is
+  required to understand the mechanisms of macroscopic bone fracture in humans,
+  and other terrestrial mammals, during impact loading events (e.g. falls,
+  vehicle accidents, etc.). While the dynamic response of bone has been studied
+  for several decades, high-quality data remain limited, and it is only within
+  the last decade that techniques for conducting dynamic compression tests on
+  bone at near-constant strain rates have been developed. Furthermore, there
+  appears to be a lack of published bone data in the intermediate strain rate
+  (ISR) range (i.e. 1-100 s-1), which represents a regime in which many dynamic
+  bone fractures occur. In this paper, preliminary results for the dynamic
+  compression of bovine cortical bone in the ISR regime are presented. The
+  results are obtained using two Hopkinsonbar-related techniques, namely the
+  conventional split Hopkinson bar arrangement incorporating a novel
+  cone-in-tube striker design, and the recently developed wedge bar apparatus.
+  The experimental results show a rapid transition in the strain rate sensitive
+  behaviour of bovine cortical bone in the ISR range. Finally, a new
+  viscoelastic model is proposed that captures the observed transition
+  behaviour. {\textcopyright} 2014 The Author(s) Published by the Royal
+  Society. All rights reserved.%
+    }
+    \verb{doi}
+    \verb 10.1098/rsta.2013.0210
+    \endverb
+    \field{issn}{1364503X}
+    \field{number}{2015}
+    \field{title}{{Hopkinson bar techniques for the intermediate strain rate
+  testing of bovine cortical bone}}
+    \field{volume}{372}
+    \verb{file}
+    \verb :home/benjamin/Downloads/rsta.2013.0210.pdf:pdf
+    \endverb
+    \field{journaltitle}{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Reese1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Reese},
+         familyi={R\bibinitperiod},
+         given={Stefanie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Govindjee},
+         familyi={G\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{RSGS1}
+    \strng{fullhash}{RSGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Most current models for finite deformation viscoelasticity are restricted
+  to linear evolution laws for the viscous material behaviour. In this paper,
+  we present a model for finite deformation viscoelasticity that utilizes a
+  nonlinear evolution law, and thus is not restricted to states close to the
+  thermodynamic equilibrium. We further show that upon appropriate
+  linearization, we can recover several established models of finite linear
+  viscoelasticity and linear viscoelasticity. The utilization of this model in
+  a computational setting is also addressed and examples are presented to
+  highlight the differences of the proposed model in relation with other
+  available models. {\textcopyright} 1998 Elsevier Science Ltd. All rights
+  reserved.%
+    }
+    \verb{doi}
+    \verb 10.1016/s0020-7683(97)00217-5
+    \endverb
+    \field{issn}{00207683}
+    \field{number}{26-27}
+    \field{pages}{3455\bibrangedash 3482}
+    \field{title}{{A theory of finite viscoelasticity and numerical aspects}}
+    \field{volume}{35}
+    \verb{file}
+    \verb :home/benjamin/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downl
+    \verb oaded/Reese, Govindjee - 1998 - A theory of finite viscoelasticity an
+    \verb d numerical aspects.pdf:pdf
+    \endverb
+    \field{journaltitle}{International Journal of Solids and Structures}
+    \field{year}{1998}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\enddatalist
+\endinput

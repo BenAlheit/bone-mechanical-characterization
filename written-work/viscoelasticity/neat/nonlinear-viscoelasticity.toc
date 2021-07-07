@@ -1,0 +1,69 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Small strain non-linear viscoelasticity in 1D}{5}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Maxwell model kinetics and kinematics}{5}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Thermodynamic considerations}{5}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Temporal discretization}{5}{subsection.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}The framework}{5}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Satisfying the axioms of the Maxwell model}{5}{subsubsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Some models and their behaviour}{5}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.1}Linear viscoelasticity}{5}{subsubsection.2.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.2}Ostwald-de Waele model}{5}{subsubsection.2.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.3}Modified Ostwald-de Waele model}{5}{subsubsection.2.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.4}Carreau--Yasuda model}{5}{subsubsection.2.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.5.5}Model behaviour}{5}{subsubsection.2.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6}Fitting models to data}{5}{subsection.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Small strain non-linear viscoelasticity in 3D}{5}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Isochoric--volumetric split}{5}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Maxwell model kinetics and kinematics}{5}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Thermodynamic considerations}{5}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}The framework }{5}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Satisfying the axioms of the Maxwell model}{5}{subsubsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Some models and their behaviour}{5}{subsection.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1}Linear viscoelasticity}{6}{subsubsection.3.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2}Ostwald-de Waele model}{6}{subsubsection.3.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.3}Modified Ostwald-de Waele model}{6}{subsubsection.3.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.4}Carreau--Yasuda model}{6}{subsubsection.3.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.5}Model behaviour}{6}{subsubsection.3.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Fitting models to data}{6}{subsection.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Computational examples}{6}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Inverse FE to fit models??}{6}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Impact loading on bone: comparison of results for different models}{6}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Other temporal approximations}{7}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Why it's incorrect to simply insert a new viscosity at each time-step}{7}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Some more detailed maths (maybe)}{7}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Extension to finite strain}{7}{appendix.D}

@@ -328,21 +328,25 @@ Fix incorrect sign:
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{e-stress}
+		\caption{ }
 	\end{subfigure}
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{e-dot-stress}
+		\caption{ }
 	\end{subfigure}
 
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{e-dot-stress-tau}
+		\caption{ }
 	\end{subfigure}
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{e-dot-stress-E}
+		\caption{ }
 	\end{subfigure}
-
+	\caption{Linear viscoelasticity}
 \end{figure}
 
 \subsubsection{Ostwald-de Waele model}
@@ -364,21 +368,13 @@ Can change slant. See for example Figure \ref{fig:odw}.
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.65\linewidth]{odw}
-	\caption{ }
+	\caption{Ostwald-de Waele viscosity}
 	\label{fig:odw}	
 \end{figure}
 
 \subsubsection{Modified Ostwald-de Waele model}
 
-Bone is assumed to be impregnated with blood and other biological fluids which are susceptible to shear thinning or thickening
-
-\begin{equation}
-\sigma^{d} = \eta(\dot{\epsilon}^{d})\dot{\epsilon}^{d}
-\end{equation}
-
-\begin{equation}
-D = \eta(\dot{\epsilon}^{d})\left[\dot{\epsilon}^{d}\right]^{2} \geq 0 \,, \qquad \eta(\dot{\epsilon}^{d})\geq 0\,.
-\end{equation}
+ODW model has a numerical issue when $\dot{\epsilon}^{d}=0$. Fix with modification:
 
 \begin{equation}
 \eta(\dot{\epsilon}^{d}) = \eta_{0}\left[1+|\dot{\epsilon}^{d}|\right]^{n-1}
@@ -387,7 +383,7 @@ Can change slant. See for example Figure \ref{fig:modw}. Fixes divide by 0 error
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.65\linewidth]{modw}
-	\caption{ }
+	\caption{Modified Ostwald-de Waele viscosity}
 	\label{fig:modw}	
 \end{figure}
 
@@ -403,21 +399,25 @@ Can change slant. See for example Figure \ref{fig:modw}. Fixes divide by 0 error
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{carreau-lams}
+		\caption{ }
 	\end{subfigure}
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{carreau-etas}
+		\caption{ }
 	\end{subfigure}
 	
 	\begin{subfigure}{0.48\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{carreau-ns}
+		\caption{ }
 	\end{subfigure}
 	\begin{subfigure}{0.48\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{carreau-as}
+		\includegraphics[width=\linewidth]{carreau-as} 
+		\caption{ }
 	\end{subfigure}
-	
+	\caption{Carreau--Yasuda viscosity}
 \end{figure}
 
 \section{Going 3D}

@@ -1,111 +1,89 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.5.6)  6 JUL 2021 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.3)  22 JUL 2021 13:41
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**nonlinear-viscoelasticity.tex
-(./nonlinear-viscoelasticity.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+**./nonlinear-viscoelasticity.tex
+(nonlinear-viscoelasticity.tex
+LaTeX2e <2019-10-01> patch level 3
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count87
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count88
+\lrq@indent=\count89
 
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write3
-\integerpart=\count89
-\decimalpart=\count90
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-\c@tabx@nest=\count91
-\c@listtotal=\count92
-\c@listcount=\count93
-\c@liststart=\count94
-\c@liststop=\count95
-\c@citecount=\count96
-\c@citetotal=\count97
-\c@multicitecount=\count98
-\c@multicitetotal=\count99
-\c@instcount=\count100
-\c@maxnames=\count101
-\c@minnames=\count102
-\c@maxitems=\count103
-\c@minitems=\count104
-\c@citecounter=\count105
+\c@tabx@nest=\count90
+\c@listtotal=\count91
+\c@listcount=\count92
+\c@liststart=\count93
+\c@liststop=\count94
+\c@citecount=\count95
+\c@citetotal=\count96
+\c@multicitecount=\count97
+\c@multicitetotal=\count98
+\c@instcount=\count99
+\c@maxnames=\count100
+\c@minnames=\count101
+\c@maxitems=\count102
+\c@minitems=\count103
+\c@citecounter=\count104
+\c@maxcitecounter=\count105
 \c@savedcitecounter=\count106
 \c@uniquelist=\count107
 \c@uniquename=\count108
@@ -113,22 +91,24 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \c@refsegment=\count110
 \c@maxextratitle=\count111
 \c@maxextratitleyear=\count112
-\c@maxextradate=\count113
-\c@maxextraalpha=\count114
-\c@abbrvpenalty=\count115
-\c@highnamepenalty=\count116
-\c@lownamepenalty=\count117
-\c@maxparens=\count118
-\c@parenlevel=\count119
-\blx@tempcnta=\count120
-\blx@tempcntb=\count121
-\blx@tempcntc=\count122
-\blx@maxsection=\count123
-\blx@maxsegment@0=\count124
-\blx@notetype=\count125
-\blx@parenlevel@text=\count126
-\blx@parenlevel@foot=\count127
-\blx@sectionciteorder@0=\count128
+\c@maxextraname=\count113
+\c@maxextradate=\count114
+\c@maxextraalpha=\count115
+\c@abbrvpenalty=\count116
+\c@highnamepenalty=\count117
+\c@lownamepenalty=\count118
+\c@maxparens=\count119
+\c@parenlevel=\count120
+\blx@tempcnta=\count121
+\blx@tempcntb=\count122
+\blx@tempcntc=\count123
+\blx@maxsection=\count124
+\blx@maxsegment@0=\count125
+\blx@notetype=\count126
+\blx@parenlevel@text=\count127
+\blx@parenlevel@foot=\count128
+\blx@sectionciteorder@0=\count129
+\blx@entrysetcounter=\count130
 \labelnumberwidth=\skip43
 \labelalphawidth=\skip44
 \biblabelsep=\skip45
@@ -138,101 +118,112 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibparsep=\skip49
 \bibhang=\skip50
 \blx@bcfin=\read1
-\blx@bcfout=\write4
-\c@mincomprange=\count129
-\c@maxcomprange=\count130
-\c@mincompwidth=\count131
+\blx@bcfout=\write3
+\blx@langwohyphens=\language82
+\c@mincomprange=\count131
+\c@maxcomprange=\count132
+\c@mincompwidth=\count133
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count132
-\c@savedafterword=\count133
-\c@annotator=\count134
-\c@savedannotator=\count135
-\c@author=\count136
-\c@savedauthor=\count137
-\c@bookauthor=\count138
-\c@savedbookauthor=\count139
-\c@commentator=\count140
-\c@savedcommentator=\count141
-\c@editor=\count142
-\c@savededitor=\count143
-\c@editora=\count144
-\c@savededitora=\count145
-\c@editorb=\count146
-\c@savededitorb=\count147
-\c@editorc=\count148
-\c@savededitorc=\count149
-\c@foreword=\count150
-\c@savedforeword=\count151
-\c@holder=\count152
-\c@savedholder=\count153
-\c@introduction=\count154
-\c@savedintroduction=\count155
-\c@namea=\count156
-\c@savednamea=\count157
-\c@nameb=\count158
-\c@savednameb=\count159
-\c@namec=\count160
-\c@savednamec=\count161
-\c@translator=\count162
-\c@savedtranslator=\count163
-\c@shortauthor=\count164
-\c@savedshortauthor=\count165
-\c@shorteditor=\count166
-\c@savedshorteditor=\count167
-\c@labelname=\count168
-\c@savedlabelname=\count169
-\c@institution=\count170
-\c@savedinstitution=\count171
-\c@lista=\count172
-\c@savedlista=\count173
-\c@listb=\count174
-\c@savedlistb=\count175
-\c@listc=\count176
-\c@savedlistc=\count177
-\c@listd=\count178
-\c@savedlistd=\count179
-\c@liste=\count180
-\c@savedliste=\count181
-\c@listf=\count182
-\c@savedlistf=\count183
-\c@location=\count184
-\c@savedlocation=\count185
-\c@organization=\count186
-\c@savedorganization=\count187
-\c@origlocation=\count188
-\c@savedoriglocation=\count189
-\c@origpublisher=\count190
-\c@savedorigpublisher=\count191
-\c@publisher=\count192
-\c@savedpublisher=\count193
-\c@language=\count194
-\c@savedlanguage=\count195
-\c@origlanguage=\count196
-\c@savedoriglanguage=\count197
-\c@pageref=\count198
-\c@savedpageref=\count199
+\c@afterword=\count134
+\c@savedafterword=\count135
+\c@annotator=\count136
+\c@savedannotator=\count137
+\c@author=\count138
+\c@savedauthor=\count139
+\c@bookauthor=\count140
+\c@savedbookauthor=\count141
+\c@commentator=\count142
+\c@savedcommentator=\count143
+\c@editor=\count144
+\c@savededitor=\count145
+\c@editora=\count146
+\c@savededitora=\count147
+\c@editorb=\count148
+\c@savededitorb=\count149
+\c@editorc=\count150
+\c@savededitorc=\count151
+\c@foreword=\count152
+\c@savedforeword=\count153
+\c@holder=\count154
+\c@savedholder=\count155
+\c@introduction=\count156
+\c@savedintroduction=\count157
+\c@namea=\count158
+\c@savednamea=\count159
+\c@nameb=\count160
+\c@savednameb=\count161
+\c@namec=\count162
+\c@savednamec=\count163
+\c@translator=\count164
+\c@savedtranslator=\count165
+\c@shortauthor=\count166
+\c@savedshortauthor=\count167
+\c@shorteditor=\count168
+\c@savedshorteditor=\count169
+\c@labelname=\count170
+\c@savedlabelname=\count171
+\c@institution=\count172
+\c@savedinstitution=\count173
+\c@lista=\count174
+\c@savedlista=\count175
+\c@listb=\count176
+\c@savedlistb=\count177
+\c@listc=\count178
+\c@savedlistc=\count179
+\c@listd=\count180
+\c@savedlistd=\count181
+\c@liste=\count182
+\c@savedliste=\count183
+\c@listf=\count184
+\c@savedlistf=\count185
+\c@location=\count186
+\c@savedlocation=\count187
+\c@organization=\count188
+\c@savedorganization=\count189
+\c@origlocation=\count190
+\c@savedoriglocation=\count191
+\c@origpublisher=\count192
+\c@savedorigpublisher=\count193
+\c@publisher=\count194
+\c@savedpublisher=\count195
+\c@language=\count196
+\c@savedlanguage=\count197
+\c@origlanguage=\count198
+\c@savedoriglanguage=\count199
+\c@pageref=\count266
+\c@savedpageref=\count267
 \shorthandwidth=\skip51
 \shortjournalwidth=\skip52
 \shortserieswidth=\skip53
 \shorttitlewidth=\skip54
 \shortauthorwidth=\skip55
 \shorteditorwidth=\skip56
+\locallabelnumberwidth=\skip57
+\locallabelalphawidth=\skip58
+\localshorthandwidth=\skip59
+\localshortjournalwidth=\skip60
+\localshortserieswidth=\skip61
+\localshorttitlewidth=\skip62
+\localshortauthorwidth=\skip63
+\localshorteditorwidth=\skip64
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-bibtex.def"
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 
 
 Package biblatex Warning: Using fall-back BibTeX(8) backend:
@@ -241,34 +232,40 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count266
-\c@textcitetotal=\count267
-\c@textcitemaxnames=\count268
-\c@biburlnumpenalty=\count269
-\c@biburlucpenalty=\count270
-\c@biburllcpenalty=\count271
-\c@smartand=\count272
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count268
+\c@textcitetotal=\count269
+\c@textcitemaxnames=\count270
+\c@biburlbigbreakpenalty=\count271
+\c@biburlbreakpenalty=\count272
+\c@biburlnumpenalty=\count273
+\c@biburlucpenalty=\count274
+\c@biburllcpenalty=\count275
+\biburlbigskip=\muskip11
+\biburlnumskip=\muskip12
+\biburlucskip=\muskip13
+\biburllcskip=\muskip14
+\c@smartand=\count276
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count273
-\c@bbx:relatedtotal=\count274
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count277
+\c@bbx:relatedtotal=\count278
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2017/12/19 v3.10 biblatex citation style (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx"
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -284,53 +281,53 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
 File: biblatex.cfg 
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip57
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip65
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen103
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count275
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count276
-\leftroot@=\count277
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count278
-\DOTSCASE@=\count279
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count280
-\c@MaxMatrixCols=\count281
-\dotsspace@=\muskip11
-\c@parentequation=\count282
-\dspbrk@lvl=\count283
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count284
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip15
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
 \tag@help=\toks16
-\row@=\count284
-\column@=\count285
-\maxfields@=\count286
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
 \andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -339,77 +336,74 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \totwidth@=\dimen110
 \lineht@=\dimen111
 \@envbody=\toks18
-\multlinegap=\skip58
-\multlinetaggap=\skip59
+\multlinegap=\skip66
+\multlinetaggap=\skip67
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\bm.sty"
+Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 207.
+LaTeX Info: Redefining \bm on input line 209.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/algorithms\algorithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count287
+\c@float@type=\count291
 \float@exts=\toks20
-\float@box=\box28
+\float@box=\box29
 \@float@everytoks=\toks21
-\@floatcapt=\box29
+\@floatcapt=\box30
 )
 \@float@every@algorithm=\toks22
-\c@algorithm=\count288
+\c@algorithm=\count292
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 
-(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/algorithmicx\algorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count289
-\c@ALG@rem=\count290
-\c@ALG@nested=\count291
-\ALG@tlm=\skip60
-\ALG@thistlm=\skip61
-\c@ALG@Lnr=\count292
-\c@ALG@blocknr=\count293
-\c@ALG@storecount=\count294
-\c@ALG@tmpcounter=\count295
-\ALG@tmplength=\skip62
+\c@ALG@line=\count293
+\c@ALG@rem=\count294
+\c@ALG@nested=\count295
+\ALG@tlm=\skip68
+\ALG@thistlm=\skip69
+\c@ALG@Lnr=\count296
+\c@ALG@blocknr=\count297
+\c@ALG@storecount=\count298
+\c@ALG@tmpcounter=\count299
+\ALG@tmplength=\skip70
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count296
-\Gm@cntv=\count297
-\c@Gm@tempcnt=\count298
+\Gm@cnth=\count300
+\Gm@cntv=\count301
+\c@Gm@tempcnt=\count302
 \Gm@bindingoffset=\dimen112
 \Gm@wd@mp=\dimen113
 \Gm@odd@mp=\dimen114
@@ -419,36 +413,37 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen118
 \Gm@layoutvoffset=\dimen119
 \Gm@dimlist=\toks23
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen122
 \captionmargin@=\dimen123
 \captionwidth=\dimen124
@@ -456,31 +451,27 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@indent=\dimen126
 \caption@parindent=\dimen127
 \caption@hangindent=\dimen128
+Package caption Info: Standard document class detected.
 )
-\c@ContinuedFloat=\count299
+\c@caption@flags=\count303
+\c@continuedfloat=\count304
 Package caption Info: float package is loaded.
 )
-\c@subfigure=\count300
-\c@subtable=\count301
+\c@subfigure=\count305
+\c@subtable=\count306
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
+\@quotelevel=\count307
+\@quotereset=\count308
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
-)
-\@quotelevel=\count302
-\@quotereset=\count303
-
-(./nonlinear-viscoelasticity.aux)
+(nonlinear-viscoelasticity.aux)
 \openout1 = `nonlinear-viscoelasticity.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -495,14 +486,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-Package biblatex Info: No input encoding detected.
-(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'ascii'.
-Package biblatex Info: Input encoding 'ascii' specified.
-Package biblatex Info: Data encoding 'ascii' specified.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout4 = `nonlinear-viscoelasticity-blx.bib'.
+\openout3 = `nonlinear-viscoelasticity-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'nonlinear-viscoelasticity.bbl' not found.
@@ -544,179 +540,162 @@ Package biblatex Info: Reference segment=0 on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
+\scratchcounter=\count309
 \scratchdimen=\dimen129
-\scratchbox=\box30
-\nofMPsegments=\count305
-\nofMParguments=\count306
+\scratchbox=\box31
+\nofMPsegments=\count310
+\nofMParguments=\count311
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count307
+\MPscratchCnt=\count312
 \MPscratchDim=\dimen130
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
 \everyMPtoPDFconversion=\toks25
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+85.
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+4.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
-<./figures/e-stress.pdf, id=28, 462.52798pt x 346.89601pt>
+{C:/Users/alhei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+ [5]
+<./figures/e-stress.pdf, id=27, 462.52798pt x 346.89601pt>
 File: ./figures/e-stress.pdf Graphic file (type pdf)
 <use ./figures/e-stress.pdf>
 Package pdftex.def Info: ./figures/e-stress.pdf  used on input line 330.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress.pdf, id=29, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress.pdf, id=28, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 334.
+Package pdftex.def Info: ./figures/e-dot-stress.pdf  used on input line 335.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress-tau.pdf, id=30, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress-tau.pdf, id=29, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-tau.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-tau.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 339
+Package pdftex.def Info: ./figures/e-dot-stress-tau.pdf  used on input line 341
 .
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/e-dot-stress-E.pdf, id=31, 462.52798pt x 346.89601pt>
+<./figures/e-dot-stress-E.pdf, id=30, 462.52798pt x 346.89601pt>
 File: ./figures/e-dot-stress-E.pdf Graphic file (type pdf)
 <use ./figures/e-dot-stress-E.pdf>
-Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 343.
+Package pdftex.def Info: ./figures/e-dot-stress-E.pdf  used on input line 346.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/odw.pdf, id=32, 462.52798pt x 346.89601pt>
+<./figures/odw.pdf, id=31, 462.52798pt x 346.89601pt>
 File: ./figures/odw.pdf Graphic file (type pdf)
 <use ./figures/odw.pdf>
-Package pdftex.def Info: ./figures/odw.pdf  used on input line 366.
+Package pdftex.def Info: ./figures/odw.pdf  used on input line 370.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
- [6]
-
-LaTeX Warning: Text page 7 contains only floats.
-
-[7 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
-> <./figures/e-dot-stress-tau.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress-tau.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
-> <./figures/e-dot-stress-E.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/e-dot-stress-E.pdf): PDF incl
-usion: multiple pdfs with page group included in a single page
-> <./figures/odw.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/odw.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->]
-<./figures/modw.pdf, id=168, 462.52798pt x 346.89601pt>
+<./figures/modw.pdf, id=32, 462.52798pt x 346.89601pt>
 File: ./figures/modw.pdf Graphic file (type pdf)
 <use ./figures/modw.pdf>
-Package pdftex.def Info: ./figures/modw.pdf  used on input line 389.
+Package pdftex.def Info: ./figures/modw.pdf  used on input line 385.
 (pdftex.def)             Requested size: 324.12762pt x 243.10608pt.
-<./figures/carreau-lams.pdf, id=169, 462.52798pt x 346.89601pt>
+ [6]
+<./figures/carreau-lams.pdf, id=36, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-lams.pdf Graphic file (type pdf)
 <use ./figures/carreau-lams.pdf>
-Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 405.
+Package pdftex.def Info: ./figures/carreau-lams.pdf  used on input line 401.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-etas.pdf, id=170, 462.52798pt x 346.89601pt>
+<./figures/carreau-etas.pdf, id=37, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-etas.pdf Graphic file (type pdf)
 <use ./figures/carreau-etas.pdf>
-Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 409.
+Package pdftex.def Info: ./figures/carreau-etas.pdf  used on input line 406.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-ns.pdf, id=171, 462.52798pt x 346.89601pt>
+<./figures/carreau-ns.pdf, id=38, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-ns.pdf Graphic file (type pdf)
 <use ./figures/carreau-ns.pdf>
-Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 414.
+Package pdftex.def Info: ./figures/carreau-ns.pdf  used on input line 412.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
-<./figures/carreau-as.pdf, id=172, 462.52798pt x 346.89601pt>
+<./figures/carreau-as.pdf, id=39, 462.52798pt x 346.89601pt>
 File: ./figures/carreau-as.pdf Graphic file (type pdf)
 <use ./figures/carreau-as.pdf>
-Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 418.
+Package pdftex.def Info: ./figures/carreau-as.pdf  used on input line 417.
 (pdftex.def)             Requested size: 239.3559pt x 179.51888pt.
- [8 <./figures/modw.pdf>] [9 <./figures/carreau-lams.pdf> <./figures/carreau-et
-as.pdf
+ [7 <./figures/e-stress.pdf> <./figures/e-dot-stress.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-etas.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./figures/e-dot-stress.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./figures/e-dot-stress-tau.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/e-dot-stress-tau.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+> <./figures/e-dot-stress-E.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/e-dot-stress-E.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] [8 <./figures/odw.pdf> <./figures/modw.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/modw.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>] [9 <./figures/carreau-lams.pdf> <./figures/carreau-etas.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figures/carreau-etas.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
 > <./figures/carreau-ns.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-ns.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./figures/carreau-ns.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
 > <./figures/carreau-as.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./figures/carreau-as.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] [10] [11] [12] (./nonlinear-viscoelasticity.aux)
+pdfTeX warning: pdflatex.exe (file ./figures/carreau-as.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] [10] [11] [12] (nonlinear-viscoelasticity.aux)
 Package logreq Info: Writing requests to 'nonlinear-viscoelasticity.run.xml'.
 \openout1 = `nonlinear-viscoelasticity.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11116 strings out of 492982
- 187485 string characters out of 6134897
- 455948 words of memory out of 5000000
- 14531 multiletter control sequences out of 15000+600000
- 12265 words of font info for 45 fonts, out of 8000000 for 9000
+ 11809 strings out of 492448
+ 203651 string characters out of 3129724
+ 482265 words of memory out of 3000000
+ 16048 multiletter control sequences out of 15000+200000
+ 12565 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,40p,814b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on nonlinear-viscoelasticity.pdf (12 pages, 454288 bytes).
+ 48i,15n,46p,816b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on nonlinear-viscoelasticity.pdf (12 pages, 592683 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
+ 350 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
